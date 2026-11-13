@@ -21,6 +21,8 @@ android/key.properties
 
 # Video workspace (separate deliverable)
 video/
+test/failures/
+
 # Distribution artefacts
 *.apk
 *.aab

@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:clock/clock.dart';
 import 'package:flutter/foundation.dart';
 
 import '../config/app_config.dart';
@@ -159,7 +160,7 @@ class AppState extends ChangeNotifier {
   Future<void> agreeAndSend({required bool reminders}) async {
     _consent = ConsentRecord(
       version: AppConfig.consentVersion,
-      grantedAt: DateTime.now(),
+      grantedAt: clock.now(),
       purposes: {'plan', if (reminders) 'reminders'},
       reminders: reminders,
     );
@@ -223,7 +224,7 @@ class AppState extends ChangeNotifier {
 
   Future<void> placeOrder() async {
     _orderPlaced = true;
-    _orderCreatedAt ??= DateTime.now();
+    _orderCreatedAt ??= clock.now();
     await _persist();
     notifyListeners();
   }
@@ -249,7 +250,7 @@ class AppState extends ChangeNotifier {
       item.key,
       entry.copyWith(
         checked: !entry.checked,
-        packedAt: !entry.checked ? DateTime.now() : null,
+        packedAt: !entry.checked ? clock.now() : null,
         clearPackedAt: entry.checked,
       ),
     );
@@ -263,7 +264,7 @@ class AppState extends ChangeNotifier {
       if (!entry.checked) {
         _pack = _pack.withEntry(
           item.key,
-          entry.copyWith(checked: true, packedAt: DateTime.now()),
+          entry.copyWith(checked: true, packedAt: clock.now()),
         );
       }
     }
@@ -320,7 +321,7 @@ class AppState extends ChangeNotifier {
 
   String exportData() {
     return const JsonEncoder.withIndent('  ').convert({
-      'exportedAt': DateTime.now().toIso8601String(),
+      'exportedAt': clock.now().toIso8601String(),
       'household': _household.map((person) => person.toJson()).toList(),
       'needsText': _needsText,
       'needs': _needs.toJson(),
@@ -348,7 +349,7 @@ class AppState extends ChangeNotifier {
       return;
     }
     try {
-      _orderCreatedAt ??= DateTime.now();
+      _orderCreatedAt ??= clock.now();
       _essentialPlan = _optimizer.build(
         PlanRequest(
           household: _household,

@@ -1,3 +1,5 @@
+import 'package:clock/clock.dart';
+
 import 'plan.dart';
 import 'product.dart';
 
@@ -52,7 +54,7 @@ class OrderSplitter {
   OrderSplitter._();
 
   static OrderData fromPlan(PlanResult plan, {DateTime? now}) {
-    final createdAt = now ?? DateTime.now();
+    final createdAt = now ?? clock.now();
     final grouped = <Store, List<PlanItem>>{};
     for (final item in plan.items) {
       grouped.putIfAbsent(item.product.store, () => []).add(item);

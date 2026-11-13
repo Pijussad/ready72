@@ -1,3 +1,5 @@
+import 'package:clock/clock.dart';
+
 import '../models/person.dart';
 
 /// Simple growth projection. Heights are approximate WHO median height-for-age
@@ -27,7 +29,7 @@ class GrowthProjection {
 }
 
 GrowthProjection project(Person person, {DateTime? now}) {
-  final today = now ?? DateTime.now();
+  final today = now ?? clock.now();
   final age = person.age;
   final current = _medianHeight(age);
   final next = _medianHeight(age + 1);
