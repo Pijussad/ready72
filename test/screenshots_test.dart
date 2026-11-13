@@ -142,10 +142,14 @@ void main() {
     await tester.pumpAndSettle();
     await shot('11_emergency');
 
-    await tester.tap(find.byIcon(Icons.chevron_left).first);
-    await tester.pumpAndSettle();
-    await tester.tap(find.text('Open printable checklist'));
+    await tester.tap(find.text('Ona’s bag').first);
     await tester.pumpAndSettle();
     await shot('12_checklist');
+
+    await tester.tap(find.byIcon(Icons.chevron_left).first);
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Find a shelter'));
+    await tester.pumpAndSettle();
+    await shot('13_shelter');
   });
 }

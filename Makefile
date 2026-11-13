@@ -14,7 +14,7 @@ analyze:
 	flutter analyze
 
 web:
-	flutter build web --release --pwa-strategy=none
+	flutter build web --release --pwa-strategy=none --no-web-resources-cdn
 
 clean:
 	flutter clean
