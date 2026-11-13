@@ -75,3 +75,5 @@ No server receives health text in this build. There is no first-party analytics,
 - `docs/GUARDRAILS.md` — every rule, evidence, repair and test evidence.
 - `docs/REPORT.md` — verification, metrics and limitations.
 - `docs/DEMO_SCRIPT.md` — the 3-minute demo path.
+
+Live demo: https://pijussad.github.io/ready72/

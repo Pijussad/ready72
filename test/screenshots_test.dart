@@ -106,9 +106,7 @@ void main() {
     await tester.pumpAndSettle();
     await shot('07_subscribe');
 
-    await tester.ensureVisible(find.textContaining('SUBSCRIBE'));
-    await tester.pumpAndSettle();
-    await tester.tap(find.textContaining('SUBSCRIBE'));
+    await tester.tap(find.text('Not now'));
     await tester.pumpAndSettle();
     await shot('08_pack');
 

@@ -68,6 +68,10 @@ Prices come from public Lithuanian listings. Sixteen Barbora rows were checked l
 | Shelter data | Official PAGD page plus map search; no live nearest-shelter dataset |
 | Release signing | Release keystore configured locally; APK is release-signed |
 
+## Hosted demo
+
+https://pijussad.github.io/ready72/
+
 ## Verification
 
 - `flutter test` → **64 functional tests + 1 golden set, 0 failed**.

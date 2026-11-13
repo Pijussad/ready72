@@ -74,7 +74,7 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get familyHelper =>
-      'Kiekvieno krepšio svoris ribojamas pagal tai, ką žmogus gali nešti, o vaikams ir senjorams – dar mažiau.';
+      'Kiekvieno krepšio svoris ribojamas pagal tai, ką žmogus gali nešti, o vaikams ir senjorams – dar mažesnis.';
 
   @override
   String get familyEmpty => 'Pridėkite bent vieną asmenį.';
@@ -92,7 +92,7 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get needsPlaceholder =>
-      'Močiutei Onai yra diabetas, ji vartoja insulį. Mia 2 metų, dar nešioja sauskelnes. Turime šunį.';
+      'Močiutei Onai diagnozuotas diabetas, ji vartoja insulį. Mia yra 2 metų, dar nešioja sauskelnes. Turime šunį.';
 
   @override
   String get youCanMention => 'Galite paminėti';
@@ -110,7 +110,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get hintBaby => 'Kūdikio poreikiai';
 
   @override
-  String get hintGlasses => 'Akiniai ar judėjimas';
+  String get hintGlasses => 'Akiniai ar judėjimo sunkumai';
 
   @override
   String needsClarify(String question) {
@@ -179,7 +179,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get condBack => 'Nugaros problema';
 
   @override
-  String get condMobility => 'Judėjimas';
+  String get condMobility => 'Judėjimo sunkumai';
 
   @override
   String get condGlasses => 'Akiniai';
@@ -212,7 +212,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get privacyNotice => 'Privatumo pranešimas';
 
   @override
-  String get agreeAndSend => 'Sutikti ir kurti';
+  String get agreeAndSend => 'Sutikti ir sukurti';
 
   @override
   String get consentGateHint =>
@@ -425,7 +425,7 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get privacyBody =>
-      'Ready72 tvarko jūsų šeimos narių vardus, amžių ir svorį bei jūsų pateiktą laisvo teksto poreikių aprašymą, kad sudarytų 72 valandų krepšio planą. Sveikatos informacija pagal BDAR yra specialių kategorijų duomenys. Ją tvarkome tik gavę jūsų aiškų sutikimą ir tik šiam tikslui.\n\nViskas apskaičiuojama ir saugoma šiame įrenginyje. Nėra mūsų serverio, jokios analitikos apie jus ir jokios reklamos. Pasirenkamas AI klientas šiame leidime nenaudojamas. Žemiau galite atšaukti sutikimą, eksportuoti duomenis arba viską ištrinti vienu veiksmu. Ištrynus pašalinama šeima, poreikiai, planas, užsakymas, prenumerata ir pakavimo eiga iš šio įrenginio.';
+      'Ready72 tvarko jūsų šeimos narių vardus, amžių ir svorį bei jūsų pateiktą laisvo teksto poreikių aprašymą, kad sudarytų 72 valandų krepšio planą. Sveikatos informacija pagal BDAR yra specialių kategorijų duomenys. Ją tvarkome tik gavę jūsų aiškų sutikimą ir tik šiam tikslui.\n\nViskas apskaičiuojama ir saugoma šiame įrenginyje. Neturime serverio, jokios analitikos apie jus ir jokios reklamos. Pasirenkamas AI klientas šiame leidime nenaudojamas. Žemiau galite atšaukti sutikimą, eksportuoti duomenis arba viską ištrinti vienu veiksmu. Ištrynus bus pašalinti šeima, poreikiai, planas, užsakymas, prenumerata ir pakavimo eiga iš šio įrenginio.';
 
   @override
   String get withdrawConsent => 'Atšaukti sutikimą ir ištrinti visus duomenis';
@@ -509,7 +509,7 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get clarifyUnsure =>
-      'Nepavyko priskirti teksto konkretiems poreikiams. Įrašykite vardą ir ko jam reikia, arba tęskite.';
+      'Nepavyko priskirti teksto konkretiems poreikiams. Įrašykite vardą ir nurodykite, ko reikia, arba tęskite.';
 
   @override
   String get lt72Source => 'Pagal LT72 išvykimo krepšio sąrašą (lt72.lt)';
@@ -542,7 +542,7 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get waterNote =>
-      'Vienam suaugusiajam 72 val. reikia apie 3 l vandens. Likusiam vandeniui – valymo priemonės.';
+      'Vienam suaugusiam asmeniui 72 val. reikia apie 3 l vandens. Likusiam vandeniui – valymo priemonės.';
 
   @override
   String get validationTitle => 'Patikrinkite duomenis';
@@ -661,7 +661,7 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get replacementNote =>
-      'Maistas pakeičiamas nepasibaigus galiojimui; vaikų kuprinės – kai išauga.';
+      'Maistas pakeičiamas nepasibaigus galiojimui; vaikų kuprinės – kai vaikai jas išauga.';
 
   @override
   String packTitleWithName(Object name) {
@@ -670,7 +670,7 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String packReady(Object name) {
-    return '$name krepšys paruoštas.';
+    return 'Krepšys paruoštas: $name.';
   }
 
   @override
@@ -690,7 +690,7 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get aboutPrototypeBody =>
-      'Kainos – patikrinti Barbora sąrašai ir katalogo įverčiai. Pristatymas, mokėjimas ir sekimas šiame hakatono leidime imituojami.';
+      'Kainos pagrįstos patikrintais „Barbora“ sąrašais ir katalogo įverčiais. Pristatymas, mokėjimas ir sekimas šiame hakatono leidime imituojami.';
 
   @override
   String get homeTitle => 'Jūsų krepšiai';
@@ -728,19 +728,19 @@ class AppLocalizationsLt extends AppLocalizations {
   String get condLowSugar => 'Mažai cukraus';
 
   @override
-  String get markAll => 'Pažymėti viską supakuota';
+  String get markAll => 'Pažymėti viską kaip supakuotą';
 
   @override
   String get unpackAll => 'Išpakuoti viską';
 
   @override
-  String get grabGo => 'Imk ir eik';
+  String get grabGo => 'Imkite ir eikite';
 
   @override
   String get grabGoSub => 'Viskas artimiausioms 72 valandoms vienoje vietoje.';
 
   @override
-  String get emergencyTitle => 'Imk ir eik';
+  String get emergencyTitle => 'Imkite ir eikite';
 
   @override
   String get emergencySub => 'Jei reikia išvykti dabar pat.';
@@ -777,7 +777,7 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get checklistSub =>
-      'Nusikopijuokite, atsispausdinkite arba laikykite neprisijungę.';
+      'Nukopijuokite, atsispausdinkite arba naudokitės neprisijungę.';
 
   @override
   String get copyChecklist => 'Kopijuoti sąrašą';
@@ -860,11 +860,11 @@ class AppLocalizationsLt extends AppLocalizations {
   String get lt72GroupPet => 'Augintiniams';
 
   @override
-  String get noAdultTitle => 'Šioje šeimoje nėra suaugusiojo';
+  String get noAdultTitle => 'Šioje šeimoje nėra suaugusio asmens';
 
   @override
   String get noAdultBody =>
-      'Vaikai negali patys nešti viso 72 valandų krovinių. Pridėkite suaugusįjį arba suplanuokite atsiėmimo punktą su vežimėliu. Trūkumai rodomi sąžiningai.';
+      'Vaikai negali patys nešti viso 72 valandų krovinio. Pridėkite suaugusį asmenį arba suplanuokite atsiėmimo punktą su vežimėliu. Trūkumai rodomi sąžiningai.';
 
   @override
   String get lt72Covered => 'Plane';
