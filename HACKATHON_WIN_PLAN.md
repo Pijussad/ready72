@@ -1,13 +1,13 @@
 # Ready72: what to change to win the hackathon
 
-> **Implementation status (13 Nov 2026):** the P0 engine, parser, privacy, copy, Lithuanian, flow, Home/Settings, Pack completion, order confirmation, grab-and-go emergency screen, printable/PDF checklist, shelter screen with official list + map search, item-level LT72 in-plan/from-home/gap badges, fixed store routing with real store actions, offline cache, fit animation, local OS notifications, no-adult capacity warning, tests, icons/splash, Android/web metadata, CI and docs are implemented. The barcode scanner was removed by request (no camera permission, no ML Kit). Demo output is now **Essential €350.79 / Comfort €472.66**, both 0 dropped and 0 blockers, with 64 functional tests passing. Hosted web demo is live at https://pijussad.github.io/ready72/. Still manual: native-speaker sign-off and the live pitch rehearsal (script and backup video prepared). The release keystore is configured locally (not committed). See `docs/REPORT.md` for the verification.
+> **Implementation status (13 Nov 2026):** the P0 engine, parser, privacy, copy, Lithuanian, flow, Home/Settings, Pack completion, order confirmation, grab-and-go emergency screen, printable/PDF checklist, shelter screen with official list + map search, item-level LT72 in-plan/from-home/gap badges, fixed store routing with real store actions, offline cache, fit animation, local OS notifications, no-adult capacity warning, tests, icons/splash, Android/web metadata, CI and docs are implemented. The barcode scanner was removed by request (no camera permission, no ML Kit). Demo output is now **Essential €350.79 / Comfort €472.66**, both 0 dropped and 0 blockers, with 66 functional tests passing. Hosted web demo is live at https://pijussad.github.io/ready72/. Still manual: native-speaker sign-off and the live pitch rehearsal (script and backup video prepared). The release keystore is configured locally (not committed). See `docs/REPORT.md` for the verification.
 
 
 Audit date: 13 Nov 2026. Scope: every file in `lib/`, `test/`, `docs/`, `android/`, `ios/`, `web/`, `macos/`, the approved artboard `Ready72 – App Design.html`, the current APK, and real optimiser output for the demo family plus 20+ edge-case households.
 
 Original audit finding: the engine, guardrails and tests were good, but the output, copy and end of the flow were not demo-ready. The app showed a €1,235 plan that dropped 56 items, rows labelled "unverified" and "simulated", broken Lithuanian, and a Pack screen with no ending. The artboard promised €412, a compact kit and a calm, finished product.
 
-Baseline at audit time (before the fixes below): `flutter test` 54/54 pass, `flutter analyze` clean, release APK built (debug-signed then; now release-signed). Current state: 64 functional tests + 1 golden set pass; see the status note at the top.
+Baseline at audit time (before the fixes below): `flutter test` 54/54 pass, `flutter analyze` clean, release APK built (debug-signed then; now release-signed). Current state: 66 functional tests + 1 golden set pass; see the status note at the top.
 
 ---
 
