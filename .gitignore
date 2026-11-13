@@ -1,0 +1,27 @@
+# Flutter/Dart
+.dart_tool/
+.packages
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+coverage/
+*.iml
+.idea/
+.DS_Store
+
+# Secrets and local config
+.env
+.env.*
+!.env.example
+android/key.properties
+*.jks
+*.keystore
+
+# Video workspace (separate deliverable)
+video/
+# Distribution artefacts
+*.apk
+*.aab
+*.zip

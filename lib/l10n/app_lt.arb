@@ -1,0 +1,496 @@
+{
+  "@@locale": "lt",
+  "appName": "Ready72",
+  "languageEnglish": "EN",
+  "languageLithuanian": "LT",
+  "welcomeTitle1": "Pasiruoškite.",
+  "welcomeTitle2": "Neškite mažiau.",
+  "welcomeBody": "72 valandų išvykimo krepšys kiekvienam šeimos nariui, pakankamai lengvas, kad galėtumėte nešti.",
+  "begin": "Pradėti",
+  "familyTitle1": "Kam ruošiate",
+  "familyTitle2": "krepšius?",
+  "nameLabel": "Vardas",
+  "ageLabel": "Amžius",
+  "weightLabel": "Svoris kg",
+  "namePlaceholder": "Vardas",
+  "agePlaceholder": "Metai",
+  "weightPlaceholder": "Kg",
+  "continueLabel": "Tęsti",
+  "addPerson": "Pridėti asmenį",
+  "removePerson": "Pašalinti asmenį",
+  "nameRequired": "Įrašykite vardą.",
+  "ageInvalid": "Amžius turi būti nuo 0 iki 120.",
+  "weightInvalid": "Svoris turi būti nuo 2 iki 300 kg.",
+  "familyHelper": "Kiekvieno krepšio svoris ribojamas pagal tai, ką žmogus gali nešti, o vaikams ir senjorams – dar mažiau.",
+  "familyEmpty": "Pridėkite bent vieną asmenį.",
+  "removeNamed": "Pašalinti: {name}",
+  "@removeNamed": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "needsTitle1": "Pasakykite, ko",
+  "needsTitle2": "jums reikia.",
+  "needsPlaceholder": "Močiutei Onai yra diabetas, ji vartoja insulį. Mia 2 metų, dar nešioja sauskelnes. Turime šunį.",
+  "youCanMention": "Galite paminėti",
+  "hintMedication": "Vaistai ar būklės",
+  "hintAllergies": "Alergijos ar dieta",
+  "hintPets": "Augintiniai",
+  "hintBaby": "Kūdikio poreikiai",
+  "hintGlasses": "Akiniai ar judėjimas",
+  "needsClarify": "Vienas patikslinimas: {question}",
+  "@needsClarify": {
+    "placeholders": {
+      "question": {
+        "type": "String"
+      }
+    }
+  },
+  "needsParsed": "Poreikius priskyrėme {count} asmenims.",
+  "clarifyWho": "{detail} – kam tai?",
+  "@clarifyWho": {
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "condDiabetes": "Diabetas",
+  "condInsulin": "Insulinas",
+  "condHypertension": "Kraujospūdis",
+  "condAsthma": "Astma",
+  "condEpilepsy": "Epilepsija",
+  "condHeart": "Širdies būklė",
+  "condKidney": "Inkstų būklė",
+  "condNuts": "Riešutų alergija",
+  "condGluten": "Be glitimo",
+  "condDairy": "Be pieno",
+  "condFish": "Žuvies alergija",
+  "condEggs": "Kiaušinių alergija",
+  "condSoy": "Sojų alergija",
+  "condVegetarian": "Vegetariška",
+  "condVegan": "Veganiška",
+  "condPregnancy": "Nėštumas",
+  "condBack": "Nugaros problema",
+  "condMobility": "Judėjimas",
+  "condGlasses": "Akiniai",
+  "condBaby": "Kūdikio poreikiai",
+  "condPrescribed": "Paskirti vaistai",
+  "@needsParsed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "consentTitle1": "Prieš",
+  "consentTitle2": "tęsdami.",
+  "consentBody": "Naudojame amžių, svorį ir jūsų aprašytus poreikius planui sudaryti šiame įrenginyje. Tai apima sveikatos informaciją – jautrius duomenis. Niekas niekur nesiunčiama. Galite bet kada viską ištrinti.",
+  "consentRequired": "Sutinku, kad mano duomenys, įskaitant sveikatos informaciją, būtų tvarkomi mano planui sudaryti.",
+  "consentReminders": "Siųsti vietinius priminimus, kai baigiasi maisto galiojimas arba vaikas išauga drabužius.",
+  "privacyNotice": "Privatumo pranešimas",
+  "agreeAndSend": "Sutikti ir kurti",
+  "consentGateHint": "Duomenys lieka šiame įrenginyje. Niekas nesiunčiama.",
+  "consentRecorded": "Sutikimas įrašytas {date}. Galite jį atšaukti nustatymuose.",
+  "@consentRecorded": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "planTitle1": "Pasirinkite",
+  "planTitle2": "savo planą",
+  "comfort": "Komfortas",
+  "comfortSub": "72 valandos, daugiau šilumos",
+  "essential": "Esminis",
+  "essentialSub": "72 valandos, lengviausias",
+  "everyBagWithin": "Kiekvienas krepšys neviršija ribos",
+  "orderCta": "Užsakyti · {price}",
+  "@orderCta": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "bagLine": "{name} {weight} / {limit} kg",
+  "@bagLine": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      },
+      "limit": {
+        "type": "String"
+      }
+    }
+  },
+  "planGaps": "Nepadengta: {gaps}",
+  "@planGaps": {
+    "placeholders": {
+      "gaps": {
+        "type": "String"
+      }
+    }
+  },
+  "planDropped": "Pašalinta, kad tilptų: {items}",
+  "@planDropped": {
+    "placeholders": {
+      "items": {
+        "type": "String"
+      }
+    }
+  },
+  "criticalCovered": "Visos svarbiausios kategorijos padengtos",
+  "unverifiedPrices": "",
+  "@unverifiedPrices": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "demoCatalogue": "",
+  "reducedCapacity": "Įrašyta sumažinta nešimo riba",
+  "orderTitle": "Jūsų užsakymas",
+  "stores": "Parduotuvės",
+  "deliveries": "Pristatymai",
+  "itemsCount": "{count, plural, =1{1 prekė} few{{count} prekės} many{{count} prekių} other{{count} prekės}}",
+  "@itemsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "trackDelivery": "Sekti pristatymą",
+  "keepFresh": "Išlaikyti krepšį šviežią",
+  "statusOrdered": "Užsakytas",
+  "statusPacked": "Supakuotas",
+  "statusOnTheWay": "Pakeliui",
+  "statusDelivered": "Pristatytas",
+  "deliveryMocked": "",
+  "subscribeTitle1": "Išlaikykite",
+  "subscribeTitle2": "krepšį šviežią.",
+  "subscribeBody": "Pakeisime maistą nepasibaigus galiojimui, o vaikų išaugtus drabužius ir kuprines – kad niekada netektų perrinkti.",
+  "upTo14": "Iki 14 m. · naujos kuprinės",
+  "adult": "Suaugusio amžiaus",
+  "senior": "Senjoro amžiaus",
+  "perMonth": "{price} / mėn.",
+  "@perMonth": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "total": "Iš viso",
+  "totalPerMonth": "{price} / mėn.",
+  "@totalPerMonth": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "cancelAnytime": "Atšaukti galima bet kada",
+  "notNow": "Ne dabar",
+  "subscribeCta": "Prenumeruoti · {price} / mėn.",
+  "@subscribeCta": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "subscribed": "Prenumerata aktyvi · {price} / mėn.",
+  "@subscribed": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "paymentMocked": "",
+  "packTitle": "Krepšys",
+  "packTitleName": "Krepšys · {name}",
+  "@packTitleName": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "packProgress": "{checked} iš {total} · {weight} / {limit} kg",
+  "@packProgress": {
+    "placeholders": {
+      "checked": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      },
+      "weight": {
+        "type": "String"
+      },
+      "limit": {
+        "type": "String"
+      }
+    }
+  },
+  "close": "Uždaryti",
+  "setExpiry": "Nustatyti galiojimą",
+  "expirySet": "Galioja iki {date}",
+  "@expirySet": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryReminders": "Priminimai {first} ir {second}",
+  "@expiryReminders": {
+    "placeholders": {
+      "first": {
+        "type": "String"
+      },
+      "second": {
+        "type": "String"
+      }
+    }
+  },
+  "nextReview": "Kita peržiūra {date}",
+  "@nextReview": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "communityAdvice": "Bendruomenės patarimas",
+  "packed": "Sudėta",
+  "packedCount": "Sudėta {count}",
+  "noItems": "Šiame krepšyje nėra daiktų.",
+  "@packedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "privacyTitle": "Privatumo pranešimas",
+  "privacyBody": "Ready72 tvarko jūsų šeimos narių vardus, amžių ir svorį bei jūsų pateiktą laisvo teksto poreikių aprašymą, kad sudarytų 72 valandų krepšio planą. Sveikatos informacija pagal BDAR yra specialių kategorijų duomenys. Ją tvarkome tik gavę jūsų aiškų sutikimą ir tik šiam tikslui.\n\nViskas apskaičiuojama ir saugoma šiame įrenginyje. Nėra mūsų serverio, jokios analitikos apie jus ir jokios reklamos. Pasirenkamas AI klientas šiame leidime nenaudojamas. Žemiau galite atšaukti sutikimą, eksportuoti duomenis arba viską ištrinti vienu veiksmu. Ištrynus pašalinama šeima, poreikiai, planas, užsakymas, prenumerata ir pakavimo eiga iš šio įrenginio.",
+  "withdrawConsent": "Atšaukti sutikimą ir ištrinti visus duomenis",
+  "exportData": "Eksportuoti mano duomenis",
+  "dataCopied": "Duomenys nukopijuoti į iškarpinę.",
+  "deleteTitle": "Ištrinti visus duomenis?",
+  "deleteBody": "Iš šio įrenginio bus pašalinti šeima, poreikiai, planas, užsakymas, prenumerata ir pakavimo eiga. Atšaukti negalėsite.",
+  "delete": "Ištrinti",
+  "cancel": "Atšaukti",
+  "deleted": "Visi duomenys ištrinti.",
+  "privacyLinkHint": "Atidaro privatumo pranešimą",
+  "buildingPlan": "Sudaromi krepšiai…",
+  "planUnavailable": "Plano dar nėra. Grįžkite ir bandykite dar kartą.",
+  "expiryHint": "Bakstelėkite ··· ir nustatykite galiojimą.",
+  "itemDetails": "Daikto informacija",
+  "planDroppedCount": "{count, plural, =1{1 daiktas pašalintas, kad tilptų.} few{{count} daiktai pašalinti, kad tilptų.} many{{count} daiktų pašalinta, kad tilptų.} other{{count} daiktai pašalinti, kad tilptų.}}",
+  "viewDropped": "Peržiūrėti pašalintus daiktus",
+  "droppedTitle": "Pašalinta dėl svorio",
+  "droppedWhy": "Šie daiktai netilpo į jokio krepšio nešimo ribą.",
+  "planIncomplete": "Kai kurie būtiniausi daiktai netilpo į nešimo ribas. Prieš užsakydami peržiūrėkite pašalintus daiktus.",
+  "forPerson": "Skirta: {name}",
+  "@forPerson": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "aiOffline": "Neprisijungęs analizatorius. Jis atpažįsta įprastas būklės, alergijas, dietas, augintinius, kūdikio poreikius, akinius ir judėjimą.",
+  "aiConnected": "DeepSeek sukonfigūruotas. Poreikiai bus susisteminti po sutikimo.",
+  "clarifyUnsure": "Nepavyko priskirti teksto konkretiems poreikiams. Įrašykite vardą ir ko jam reikia, arba tęskite.",
+  "lt72Source": "Pagal LT72 išvykimo krepšio sąrašą (lt72.lt)",
+  "priceVerified": "Kaina patikrinta",
+  "priceUnverified": "Katalogo įvertis",
+  "viewProduct": "Atidaryti prekę",
+  "trackingTitle": "Užsakymo sekimas",
+  "trackingCode": "Sekimo kodas {code}",
+  "@trackingCode": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "simulatedTracking": "",
+  "backToOrder": "Grįžti į užsakymą",
+  "ownItem": "Jūsų daiktas",
+  "waterNote": "Vienam suaugusiajam 72 val. reikia apie 3 l vandens. Likusiam vandeniui – valymo priemonės.",
+  "validationTitle": "Patikrinkite duomenis",
+  "genericError": "Įvyko klaida. Bandykite dar kartą.",
+  "menu": "Meniu",
+  "catDocuments": "Dokumentai",
+  "catClothing": "Drabužiai",
+  "catFirstAid": "Pirmoji pagalba",
+  "catMedication": "Vaistai",
+  "catFood": "Maistas",
+  "catWater": "Vanduo",
+  "catHygiene": "Higiena",
+  "catShelter": "Pastogė",
+  "catTools": "Įrankiai",
+  "catCommunication": "Ryšys",
+  "catLight": "Šviesa ir energija",
+  "catChildren": "Vaikams",
+  "catPets": "Augintiniams",
+  "tryExample": "Išbandyti pavyzdinę šeimą",
+  "howItWorks": "1 Pasakykite, kam · 2 Kiekvieną krepšį pritaikome pagal tai, ką žmogus gali nešti · 3 Užsisakykite ir išlaikykite šviežią",
+  "needsTrust": "Poreikius susisteminsime po sutikimo. Viskas lieka šiame įrenginyje.",
+  "needsUnderstood": "Ką supratome",
+  "needsNone": "Konkrečių poreikių nėra – standartinis krepšys.",
+  "planWhy": "Kiekvienas krepšys ribojamas pagal tai, ką žmogus gali nešti.",
+  "coverageLabel": "LT72 padengimas",
+  "criticalCount": "{covered} iš {total} svarbiausių grupių",
+  "bringFromHome": "Pasiimkite iš namų",
+  "bringFromHomeList": "Dokumentų kopijos, vaistai, telefonas, įkroviklis, raktai, pinigai, akiniai, miegmaišis ir kilimėlis.",
+  "planError": "Plano sudaryti nepavyko. Patikrinkite šeimos duomenis ir bandykite dar kartą.",
+  "reviewOrderCta": "Peržiūrėti užsakymą · {price}",
+  "orderTotal": "Iš viso",
+  "placeOrder": "Užsakyti · {price}",
+  "orderPlaced": "Užsakymas pateiktas",
+  "orderPlacedBody": "Keturi pristatymai. Jūsų šeima bus pasiruošusi iki {date}.",
+  "cancelSubscription": "Atšaukti prenumeratą",
+  "subscriptionCancelled": "Prenumerata atšaukta.",
+  "replacementNote": "Maistas pakeičiamas nepasibaigus galiojimui; vaikų kuprinės – kai išauga.",
+  "packTitleWithName": "Krepšys · {name}",
+  "packReady": "{name} krepšys paruoštas.",
+  "packAllDone": "Viskas supakuota. Laikykite prie durų.",
+  "done": "Atlikta",
+  "settingsTitle": "Nustatymai",
+  "settingsPrivacy": "Privatumo pranešimas",
+  "aboutPrototype": "Apie šį prototipą",
+  "aboutPrototypeBody": "Kainos – patikrinti Barbora sąrašai ir katalogo įverčiai. Pristatymas, mokėjimas ir sekimas šiame hakatono leidime imituojami.",
+  "homeTitle": "Jūsų krepšiai",
+  "homeSubtitle": "Pasiruošę 72 valandoms.",
+  "homePlan": "Peržiūrėti planą",
+  "homePack": "Pakuoti krepšį",
+  "homeOrder": "Užsakymo būsena",
+  "homeSettings": "Nustatymai",
+  "homeRestart": "Pradėti iš naujo",
+  "back": "Atgal",
+  "languageLabel": "Kalba",
+  "bagWeight": "{weight} / {limit} kg",
+  "@bagWeight": {
+    "placeholders": {
+      "weight": {
+        "type": "String"
+      },
+      "limit": {
+        "type": "String"
+      }
+    }
+  },
+  "condLowSugar": "Mažai cukraus",
+  "markAll": "Pažymėti viską supakuota",
+  "unpackAll": "Išpakuoti viską",
+  "grabGo": "Imk ir eik",
+  "grabGoSub": "Viskas artimiausioms 72 valandoms vienoje vietoje.",
+  "emergencyTitle": "Imk ir eik",
+  "emergencySub": "Jei reikia išvykti dabar pat.",
+  "emergencyTake": "Pasiimkite šiuos krepšius",
+  "emergencyHome": "Pasiimkite iš namų",
+  "emergencyHomeList": "Dokumentų kopijos, vaistai, telefonas, įkroviklis, raktai, pinigai, akiniai.",
+  "emergencyShelter": "Rasti priedangą",
+  "emergencyShelterNote": "Oficiali PAGD informacija apie priedangas atsidarys naršyklėje.",
+  "emergencyCall": "Skambinti 112",
+  "emergencyNote": "Nelaukite programėlės. Jei gresia pavojus, skambinkite 112.",
+  "openChecklist": "Atidaryti spausdinamą sąrašą",
+  "checklistTitle": "Sąrašas",
+  "checklistSub": "Nusikopijuokite, atsispausdinkite arba laikykite neprisijungę.",
+  "copyChecklist": "Kopijuoti sąrašą",
+  "checklistCopied": "Sąrašas nukopijuotas į iškarpinę.",
+  "checklistHeader": "READY72 · {name} · {weight} / {limit} kg",
+  "checklistFromHome": "Iš namų: dokumentų kopijos, vaistai, telefonas, įkroviklis, raktai, pinigai, akiniai.",
+  "shelterLink": "Atidaryti PAGD informaciją apie priedangas",
+  "@checklistHeader": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      },
+      "limit": {
+        "type": "String"
+      }
+    }
+  },
+  "lt72SourceCount": "Pagal {count} punktų LT72 sąrašą (lt72.lt)",
+  "@lt72SourceCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "openStore": "Atidaryti parduotuvę",
+  "copyStoreList": "Kopijuoti pirkinių sąrašą",
+  "storeListCopied": "Pirkinių sąrašas nukopijuotas.",
+  "storeListHeader": "{store} · {count} prekės",
+  "@storeListHeader": {
+    "placeholders": {
+      "store": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lt72List": "Peržiūrėti 82 punktų LT72 sąrašą",
+  "lt72ListSub": "Oficialus sąrašas, kuriuo grindžiamas kiekvienas planas.",
+  "lt72OpenSource": "Atidaryti lt72.lt",
+  "lt72Supplementary": "Papildoma",
+  "lt72Conditional": "Sąlyginė",
+  "lt72Critical": "Būtina",
+  "lt72Important": "Svarbu",
+  "lt72Comfort": "Komfortas",
+  "lt72GroupAll": "Visiems",
+  "lt72GroupAdult": "Suaugusiesiems",
+  "lt72GroupChild": "Vaikams",
+  "lt72GroupSenior": "Senjorams",
+  "lt72GroupBaby": "Kūdikiui",
+  "lt72GroupPet": "Augintiniams",
+  "noAdultTitle": "Šioje šeimoje nėra suaugusiojo",
+  "noAdultBody": "Vaikai negali patys nešti viso 72 valandų krovinių. Pridėkite suaugusįjį arba suplanuokite atsiėmimo punktą su vežimėliu. Trūkumai rodomi sąžiningai.",
+  "lt72Covered": "Plane",
+  "lt72FromHome": "Iš namų",
+  "lt72Gap": "Nepadengta",
+  "lt72Summary": "{covered} plane · {home} iš namų · {gaps} trūkumai",
+  "lt72MappingNote": "„Plane“ reiškia, kad tą LT72 kategoriją padengia perkama prekė. „Iš namų“ – jau turimi daiktai, kurių programa neperka.",
+  "@lt72Summary": {
+    "placeholders": {
+      "covered": {
+        "type": "int"
+      },
+      "home": {
+        "type": "int"
+      },
+      "gaps": {
+        "type": "int"
+      }
+    }
+  },
+  "printChecklist": "Spausdinti / PDF",
+  "printFailed": "Nepavyko atidaryti spausdinimo dialogo.",
+  "shelterTitle": "Rasti priedangą",
+  "shelterSub": "Kolektyvinės apsaugos statinius parenka savivaldybė.",
+  "shelterOfficial": "Atidaryti oficialų PAGD sąrašą",
+  "shelterMap": "Ieškoti žemėlapyje netoliese",
+  "shelterNote": "Paieška žemėlapyje yra tik atspirties taškas, ne oficialus sąrašas. Pastatą patvirtinkite savivaldybėje arba PAGD.",
+  "shelterCall": "Jei gresia tiesioginis pavojus, skambinkite 112."
+}

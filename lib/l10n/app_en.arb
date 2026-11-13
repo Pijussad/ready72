@@ -1,0 +1,496 @@
+{
+  "@@locale": "en",
+  "appName": "Ready72",
+  "languageEnglish": "EN",
+  "languageLithuanian": "LT",
+  "welcomeTitle1": "Be ready.",
+  "welcomeTitle2": "Carry less.",
+  "welcomeBody": "A 72-hour emergency bag for every person in your family, light enough to carry.",
+  "begin": "Begin",
+  "familyTitle1": "Who are you",
+  "familyTitle2": "packing for?",
+  "nameLabel": "Name",
+  "ageLabel": "Age",
+  "weightLabel": "Weight kg",
+  "namePlaceholder": "Name",
+  "agePlaceholder": "Age",
+  "weightPlaceholder": "Kg",
+  "continueLabel": "Continue",
+  "addPerson": "Add person",
+  "removePerson": "Remove person",
+  "nameRequired": "Add a name.",
+  "ageInvalid": "Age must be between 0 and 120.",
+  "weightInvalid": "Weight must be between 2 and 300 kg.",
+  "familyHelper": "Each bag is capped at what that person can carry, and lower for children and seniors.",
+  "familyEmpty": "Add at least one person.",
+  "removeNamed": "Remove: {name}",
+  "@removeNamed": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "needsTitle1": "Tell us what",
+  "needsTitle2": "you need.",
+  "needsPlaceholder": "Grandma Ona has diabetes and takes insulin. Mia is 2 and still in diapers. We have a dog.",
+  "youCanMention": "You can mention",
+  "hintMedication": "Medication or conditions",
+  "hintAllergies": "Allergies or diets",
+  "hintPets": "Pets",
+  "hintBaby": "Baby needs",
+  "hintGlasses": "Glasses or mobility",
+  "needsClarify": "One thing to clarify: {question}",
+  "@needsClarify": {
+    "placeholders": {
+      "question": {
+        "type": "String"
+      }
+    }
+  },
+  "needsParsed": "We mapped {count} needs to people.",
+  "clarifyWho": "{detail} — who is this for?",
+  "@clarifyWho": {
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "condDiabetes": "Diabetes",
+  "condInsulin": "Insulin",
+  "condHypertension": "Blood pressure",
+  "condAsthma": "Asthma",
+  "condEpilepsy": "Epilepsy",
+  "condHeart": "Heart condition",
+  "condKidney": "Kidney condition",
+  "condNuts": "Nut allergy",
+  "condGluten": "Gluten-free",
+  "condDairy": "Dairy-free",
+  "condFish": "Fish allergy",
+  "condEggs": "Egg allergy",
+  "condSoy": "Soy allergy",
+  "condVegetarian": "Vegetarian",
+  "condVegan": "Vegan",
+  "condPregnancy": "Pregnancy",
+  "condBack": "Back problem",
+  "condMobility": "Mobility",
+  "condGlasses": "Glasses",
+  "condBaby": "Baby needs",
+  "condPrescribed": "Prescribed medicine",
+  "@needsParsed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "consentTitle1": "Before we",
+  "consentTitle2": "continue.",
+  "consentBody": "We use ages, weights and your description of needs to build the plan on this device. This includes health information, which is sensitive data. Nothing is sent anywhere. You can delete it at any time.",
+  "consentRequired": "I agree to the processing of my data, including health information, to create my plan.",
+  "consentReminders": "Send local reminders when food expires or a child outgrows clothes.",
+  "privacyNotice": "Privacy notice",
+  "agreeAndSend": "Agree and build",
+  "consentGateHint": "Your details stay on this device. Nothing is sent.",
+  "consentRecorded": "Consent recorded {date}. You can withdraw it in Settings.",
+  "@consentRecorded": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "planTitle1": "Choose",
+  "planTitle2": "your plan",
+  "comfort": "Comfort",
+  "comfortSub": "72 hours, extra warmth",
+  "essential": "Essential",
+  "essentialSub": "72 hours, lightest",
+  "everyBagWithin": "Every bag within carry limit",
+  "orderCta": "Order · {price}",
+  "@orderCta": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "bagLine": "{name} {weight} / {limit} kg",
+  "@bagLine": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      },
+      "limit": {
+        "type": "String"
+      }
+    }
+  },
+  "planGaps": "Not covered: {gaps}",
+  "@planGaps": {
+    "placeholders": {
+      "gaps": {
+        "type": "String"
+      }
+    }
+  },
+  "planDropped": "Dropped to stay within weight: {items}",
+  "@planDropped": {
+    "placeholders": {
+      "items": {
+        "type": "String"
+      }
+    }
+  },
+  "criticalCovered": "All critical categories covered",
+  "unverifiedPrices": "",
+  "@unverifiedPrices": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "demoCatalogue": "",
+  "reducedCapacity": "Reduced carry limit on file",
+  "orderTitle": "Your order",
+  "stores": "Stores",
+  "deliveries": "Deliveries",
+  "itemsCount": "{count, plural, =1{1 item} other{{count} items}}",
+  "@itemsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "trackDelivery": "Track delivery",
+  "keepFresh": "Keep my bag fresh",
+  "statusOrdered": "Ordered",
+  "statusPacked": "Packed",
+  "statusOnTheWay": "On the way",
+  "statusDelivered": "Delivered",
+  "deliveryMocked": "",
+  "subscribeTitle1": "Keep your",
+  "subscribeTitle2": "bag fresh.",
+  "subscribeBody": "We replace food before it expires and clothes and backpacks your children outgrow, so you never repack.",
+  "upTo14": "Up to 14 · new backpacks",
+  "adult": "Adult",
+  "senior": "Senior",
+  "perMonth": "{price} / month",
+  "@perMonth": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "total": "Total",
+  "totalPerMonth": "{price} / month",
+  "@totalPerMonth": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "cancelAnytime": "Cancel anytime",
+  "notNow": "Not now",
+  "subscribeCta": "Subscribe · {price} / month",
+  "@subscribeCta": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "subscribed": "Subscription active · {price} / month",
+  "@subscribed": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "paymentMocked": "",
+  "packTitle": "Pack",
+  "packTitleName": "{name}’s bag",
+  "@packTitleName": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "packProgress": "{checked} of {total} · {weight} / {limit} kg",
+  "@packProgress": {
+    "placeholders": {
+      "checked": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      },
+      "weight": {
+        "type": "String"
+      },
+      "limit": {
+        "type": "String"
+      }
+    }
+  },
+  "close": "Close",
+  "setExpiry": "Set expiry",
+  "expirySet": "Expiry {date}",
+  "@expirySet": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryReminders": "Reminders {first} and {second}",
+  "@expiryReminders": {
+    "placeholders": {
+      "first": {
+        "type": "String"
+      },
+      "second": {
+        "type": "String"
+      }
+    }
+  },
+  "nextReview": "Next review {date}",
+  "@nextReview": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "communityAdvice": "Community advice",
+  "packed": "Packed",
+  "packedCount": "{count} packed",
+  "noItems": "No items in this bag.",
+  "@packedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "privacyTitle": "Privacy notice",
+  "privacyBody": "Ready72 processes the names, ages and weights of your household, and the free-text description of needs you choose to give, to build a 72-hour bag plan. Health information is special-category data under the GDPR. We process it only with your explicit consent and only for this purpose.\n\nEverything is computed and stored on this device. There is no first-party server, no analytics about you, and no advertising. The optional AI client is not used in this build. You can withdraw consent, export your data or delete everything in one action below. Deleting removes your household, needs, plan, order, subscription and packing progress from this device.",
+  "withdrawConsent": "Withdraw consent and delete all data",
+  "exportData": "Export my data",
+  "dataCopied": "Your data was copied to the clipboard.",
+  "deleteTitle": "Delete all data?",
+  "deleteBody": "This removes your household, needs, plan, order, subscription and packing progress from this device. It cannot be undone.",
+  "delete": "Delete",
+  "cancel": "Cancel",
+  "deleted": "All data deleted.",
+  "privacyLinkHint": "Opens the privacy notice",
+  "buildingPlan": "Building your bags…",
+  "planUnavailable": "No plan yet. Go back and try again.",
+  "expiryHint": "Tap ··· to set an expiry date.",
+  "itemDetails": "Item details",
+  "planDroppedCount": "{count, plural, =1{1 item was dropped to stay within weight.} other{{count} items were dropped to stay within weight.}}",
+  "viewDropped": "View dropped items",
+  "droppedTitle": "Dropped for weight",
+  "droppedWhy": "These did not fit within any bag’s carry limit.",
+  "planIncomplete": "Some essentials did not fit within the carry limits. Review the dropped items before ordering.",
+  "forPerson": "For: {name}",
+  "@forPerson": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "aiOffline": "Offline parser. It recognises common conditions, allergies, diets, pets, baby needs, glasses and mobility.",
+  "aiConnected": "DeepSeek is configured. Needs will be structured after you consent.",
+  "clarifyUnsure": "We could not map that text to specific needs. Add a name and what they need, or continue.",
+  "lt72Source": "Based on the LT72 evacuation bag list (lt72.lt)",
+  "priceVerified": "Price checked",
+  "priceUnverified": "Catalogue estimate",
+  "viewProduct": "Open product page",
+  "trackingTitle": "Order tracking",
+  "trackingCode": "Tracking code {code}",
+  "@trackingCode": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "simulatedTracking": "",
+  "backToOrder": "Back to order",
+  "ownItem": "Your own item",
+  "waterNote": "About 3 L of water per adult for 72 hours. Purification covers the rest.",
+  "validationTitle": "Check these details",
+  "genericError": "Something went wrong. Please try again.",
+  "menu": "Menu",
+  "catDocuments": "Documents",
+  "catClothing": "Clothing",
+  "catFirstAid": "First aid",
+  "catMedication": "Medication",
+  "catFood": "Food",
+  "catWater": "Water",
+  "catHygiene": "Hygiene",
+  "catShelter": "Shelter",
+  "catTools": "Tools",
+  "catCommunication": "Communication",
+  "catLight": "Light and power",
+  "catChildren": "Children",
+  "catPets": "Pets",
+  "tryExample": "Try an example family",
+  "howItWorks": "1 Tell us who · 2 We fit each bag to what they can carry · 3 Order and keep it fresh",
+  "needsTrust": "We map this after you agree. Everything stays on this device.",
+  "needsUnderstood": "What we understood",
+  "needsNone": "No specific needs — a standard bag.",
+  "planWhy": "Every bag is capped at what that person can carry.",
+  "coverageLabel": "LT72 coverage",
+  "criticalCount": "{covered} of {total} critical groups",
+  "bringFromHome": "Bring from home",
+  "bringFromHomeList": "ID copies, medicine, phone, charger, keys, cash, glasses, sleeping bag and mat.",
+  "planError": "We could not build a plan. Check the household details and try again.",
+  "reviewOrderCta": "Review order · {price}",
+  "orderTotal": "Total",
+  "placeOrder": "Place order · {price}",
+  "orderPlaced": "Order placed",
+  "orderPlacedBody": "Four deliveries. Your family is ready by {date}.",
+  "cancelSubscription": "Cancel subscription",
+  "subscriptionCancelled": "Subscription cancelled.",
+  "replacementNote": "Food is swapped before it expires; children’s backpacks are replaced as they grow.",
+  "packTitleWithName": "{name}’s bag",
+  "packReady": "{name}’s bag is ready.",
+  "packAllDone": "All packed. Keep it by the door.",
+  "done": "Done",
+  "settingsTitle": "Settings",
+  "settingsPrivacy": "Privacy notice",
+  "aboutPrototype": "About this prototype",
+  "aboutPrototypeBody": "Prices combine checked Barbora listings with catalogue estimates. Deliveries, payment and tracking are simulated for the hackathon build.",
+  "homeTitle": "Your bags",
+  "homeSubtitle": "Ready for 72 hours.",
+  "homePlan": "View plan",
+  "homePack": "Pack a bag",
+  "homeOrder": "Order status",
+  "homeSettings": "Settings",
+  "homeRestart": "Start over",
+  "back": "Back",
+  "languageLabel": "Language",
+  "bagWeight": "{weight} / {limit} kg",
+  "@bagWeight": {
+    "placeholders": {
+      "weight": {
+        "type": "String"
+      },
+      "limit": {
+        "type": "String"
+      }
+    }
+  },
+  "condLowSugar": "Low sugar",
+  "markAll": "Mark all packed",
+  "unpackAll": "Unpack all",
+  "grabGo": "Grab and go",
+  "grabGoSub": "Everything for the next 72 hours, in one place.",
+  "emergencyTitle": "Grab and go",
+  "emergencySub": "If you have to leave now.",
+  "emergencyTake": "Take these bags",
+  "emergencyHome": "Take from home",
+  "emergencyHomeList": "ID copies, medicine, phone, charger, keys, cash, glasses.",
+  "emergencyShelter": "Find a shelter",
+  "emergencyShelterNote": "Official PAGD shelter information opens in your browser.",
+  "emergencyCall": "Call 112",
+  "emergencyNote": "Do not wait for the app. If there is immediate danger, call 112.",
+  "openChecklist": "Open printable checklist",
+  "checklistTitle": "Checklist",
+  "checklistSub": "Copy it, print it, or keep it offline.",
+  "copyChecklist": "Copy checklist",
+  "checklistCopied": "Checklist copied to the clipboard.",
+  "checklistHeader": "READY72 · {name} · {weight} / {limit} kg",
+  "checklistFromHome": "From home: ID copies, medicine, phone, charger, keys, cash, glasses.",
+  "shelterLink": "Open PAGD shelter information",
+  "@checklistHeader": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "weight": {
+        "type": "String"
+      },
+      "limit": {
+        "type": "String"
+      }
+    }
+  },
+  "lt72SourceCount": "Based on the {count}-item LT72 list (lt72.lt)",
+  "@lt72SourceCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "openStore": "Open store",
+  "copyStoreList": "Copy shopping list",
+  "storeListCopied": "Shopping list copied.",
+  "storeListHeader": "{store} · {count} items",
+  "@storeListHeader": {
+    "placeholders": {
+      "store": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lt72List": "See the 82-item LT72 list",
+  "lt72ListSub": "The official list behind every plan.",
+  "lt72OpenSource": "Open lt72.lt",
+  "lt72Supplementary": "Supplementary",
+  "lt72Conditional": "Conditional",
+  "lt72Critical": "Critical",
+  "lt72Important": "Important",
+  "lt72Comfort": "Comfort",
+  "lt72GroupAll": "All",
+  "lt72GroupAdult": "Adults",
+  "lt72GroupChild": "Children",
+  "lt72GroupSenior": "Seniors",
+  "lt72GroupBaby": "Baby",
+  "lt72GroupPet": "Pets",
+  "noAdultTitle": "No adult in this household",
+  "noAdultBody": "Children cannot carry a full 72-hour load alone. Add an adult, or plan a pickup point with a wheeled carrier. The gaps below are shown honestly.",
+  "lt72Covered": "In plan",
+  "lt72FromHome": "From home",
+  "lt72Gap": "Not covered",
+  "lt72Summary": "{covered} in plan · {home} from home · {gaps} gaps",
+  "lt72MappingNote": "“In plan” means a purchased item covers that LT72 category. “From home” is already-own gear the app does not buy.",
+  "@lt72Summary": {
+    "placeholders": {
+      "covered": {
+        "type": "int"
+      },
+      "home": {
+        "type": "int"
+      },
+      "gaps": {
+        "type": "int"
+      }
+    }
+  },
+  "printChecklist": "Print / PDF",
+  "printFailed": "Could not open the print dialog.",
+  "shelterTitle": "Find a shelter",
+  "shelterSub": "Collective protection buildings are chosen by your municipality.",
+  "shelterOfficial": "Open the official PAGD list",
+  "shelterMap": "Search the map near me",
+  "shelterNote": "The map search is a starting point, not the official list. Confirm the building with your municipality or PAGD.",
+  "shelterCall": "If there is immediate danger, call 112."
+}
