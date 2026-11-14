@@ -74,7 +74,7 @@ https://pijussad.github.io/ready72/
 
 ## Verification
 
-- `flutter test` → **66 functional tests + 1 golden set, 0 failed**.
+- `flutter test` → **67 functional tests + 1 golden set, 0 failed**.
 - `flutter analyze` → no issues.
 - `flutter build web` → succeeded.
 - `flutter build apk --release` → succeeded and verified with the release certificate.

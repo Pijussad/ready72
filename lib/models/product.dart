@@ -31,14 +31,13 @@ extension StoreDetails on Store {
     final encoded = Uri.encodeQueryComponent(query);
     switch (this) {
       case Store.barbora:
-        return 'https://barbora.lt/paieska?q=$encoded';
+        return 'https://barbora.lt/search?q=$encoded';
       case Store.rimi:
         return 'https://www.rimi.lt/search?query=$encoded';
       case Store.eurovaistine:
         return 'https://www.eurovaistine.lt/paieska/rezultatai?q=$encoded';
       case Store.decathlon:
-        // Decathlon blocks automated search URLs; the home page is reliable.
-        return 'https://www.decathlon.lt/';
+        return 'https://www.decathlon.lt/search/?query=$encoded';
     }
   }
 
@@ -117,6 +116,10 @@ class Product {
   final bool verified;
 
   String name(String languageCode) => languageCode == 'lt' ? nameLt : nameEn;
+
+  /// Store search in Lithuanian. Search pages are stable; individual product
+  /// pages in the fixture catalogue go out of stock or disappear.
+  String get orderUrl => store.searchUrl(nameLt);
 
   bool get isShared => tags.contains('shared');
   bool get userSupplied => tags.contains('userSupplied');

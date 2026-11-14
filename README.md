@@ -41,7 +41,7 @@ The app starts empty: no prefilled names, ages, weights or needs text. Tap **Try
 - **Printable A4 checklist** generated in-app and opened in the system print dialog.
 - **Local notifications** for expiry checks and annual review, scheduled only after consent.
 - **16 Barbora prices** were checked live on 13 Nov 2026. Raw snapshot: `docs/price_snapshots/barbora_2026-11-13.json`; details: `docs/BARBORA_NOTES.md`. Every other price is a catalogue estimate and is marked as such internally.
-- English and Lithuanian, 66 functional tests plus a golden screen set, `flutter analyze` clean.
+- English and Lithuanian, 67 functional tests plus a golden screen set, `flutter analyze` clean.
 
 ## What is mocked or not built
 

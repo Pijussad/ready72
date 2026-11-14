@@ -318,9 +318,7 @@ class _StoreItemRow extends StatelessWidget {
     ].where((value) => value.isNotEmpty).join(' · ');
 
     final linkable = !item.product.userSupplied;
-    final targetUrl = item.product.verified
-        ? item.product.url
-        : item.product.store.searchUrl(name);
+    final targetUrl = item.product.orderUrl;
     return InkWell(
       onTap: linkable
           ? () async {

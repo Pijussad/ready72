@@ -47,6 +47,36 @@ void main() {
     }
   });
 
+  test('store links use a Lithuanian search, not a dead product page', () {
+    for (final product in catalogue) {
+      final uri = Uri.parse(product.orderUrl);
+      expect(uri.path, isNot(contains('/p/')), reason: product.id);
+      expect(
+        product.orderUrl,
+        isNot(product.store.homeUrl),
+        reason: product.id,
+      );
+      final queryKey =
+          product.store == Store.decathlon || product.store == Store.rimi
+          ? 'query'
+          : 'q';
+      expect(uri.queryParameters[queryKey], product.nameLt, reason: product.id);
+    }
+
+    final peanut = catalogue.firstWhere((p) => p.id == 'peanut-butter');
+    expect(peanut.orderUrl, startsWith('https://barbora.lt/search?q='));
+    expect(
+      Uri.parse(peanut.orderUrl).queryParameters['q'],
+      'Žemės riešutų sviestas',
+    );
+
+    final tent = catalogue.firstWhere((p) => p.id == 'tent');
+    expect(
+      tent.orderUrl,
+      startsWith('https://www.decathlon.lt/search/?query='),
+    );
+  });
+
   test('food rows carry calories and a shelf life of at least 12 months', () {
     for (final product in catalogue.where((p) => p.isFood)) {
       expect(product.caloriesPerUnit, greaterThan(0), reason: product.id);
