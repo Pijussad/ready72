@@ -1,7 +1,7 @@
 name: ready72
 description: "Ready72 — a personal 72-hour emergency bag plan for every person in a household."
 publish_to: 'none'
-version: 1.5.2+10
+version: 1.6.0+11
 
 environment:
   sdk: ^3.12.1
