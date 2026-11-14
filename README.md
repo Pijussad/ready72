@@ -40,15 +40,15 @@ The app starts empty: no prefilled names, ages, weights or needs text. Tap **Try
 - **Offline after first load** on web through a custom service worker; no analytics and no camera permission.
 - **Printable A4 checklist** generated in-app and opened in the system print dialog.
 - **Local notifications** for expiry checks and annual review, scheduled only after consent.
-- **16 Barbora prices** were checked live on 13 Nov 2026. Raw snapshot: `docs/price_snapshots/barbora_2026-11-13.json`; details: `docs/BARBORA_NOTES.md`. Every other price is a catalogue estimate and is marked as such internally.
-- English and Lithuanian, 67 functional tests plus a golden screen set, `flutter analyze` clean.
+- **33,558 real store products** with exact observed prices and URLs were scraped on 14 Nov 2026: 24,866 Barbora, 3,711 Decathlon and 4,981 Eurovaistinė. Search them in Settings → **Product catalogue**; details and caveats: `docs/CATALOGUE_DB.md`.
+- English and Lithuanian, 70 functional tests plus a golden screen set, `flutter analyze` clean.
 
 ## What is mocked or not built
 
 | Area | Status |
 | --- | --- |
-| Catalogue prices | 16 Barbora rows verified; the rest are estimates |
-| Decathlon prices | 0 verified; automated access returned 403 |
+| Catalogue prices | 33,558 store observations from 14 Nov 2026; plan fixtures still use estimates |
+| Real product search | Settings → Product catalogue, backed by the scraped database |
 | Ordering / checkout | Mocked; "Place order" confirms a simulated order |
 | Delivery dates/statuses | Simulated and persisted locally |
 | Subscription payment | Mocked; cancel is local |

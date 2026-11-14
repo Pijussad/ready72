@@ -23,6 +23,8 @@ android/key.properties
 video/
 test/failures/
 
+.cache/
+
 # Distribution artefacts
 *.apk
 *.aab

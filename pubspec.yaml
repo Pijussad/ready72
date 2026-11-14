@@ -32,6 +32,10 @@ flutter:
   uses-material-design: true
   generate: true
 
+  assets:
+    - assets/catalogue/products.json
+    - assets/catalogue/meta.json
+
   fonts:
     - family: Inter
       fonts:

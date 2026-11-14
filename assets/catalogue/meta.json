@@ -1,0 +1,29 @@
+{
+  "generatedAt": "2026-11-14T13:33:09+00:00",
+  "currency": "EUR",
+  "count": 33558,
+  "stores": [
+    {
+      "store": "barbora",
+      "label": "Barbora",
+      "count": 24866,
+      "scrapedAt": "2026-11-14T12:11:38+00:00",
+      "source": "https://barbora.lt/sitemap-categories.xml"
+    },
+    {
+      "store": "decathlon",
+      "label": "Decathlon",
+      "count": 3711,
+      "scrapedAt": "2026-11-14T12:38:04+00:00",
+      "source": "https://www.decathlon.lt/search/"
+    },
+    {
+      "store": "eurovaistine",
+      "label": "Eurovaistinė",
+      "count": 4981,
+      "scrapedAt": "2026-11-14T13:31:45+00:00",
+      "source": "https://www.eurovaistine.lt/sitemap/taxons.xml"
+    }
+  ],
+  "note": "Prices and URLs are public store observations. Pack weight, nutrition, shelf life, role and tags are estimates/retrieval hints, not safety claims."
+}

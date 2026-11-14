@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:http/http.dart' as http;
 
+import '../data/store_catalogue.dart';
 import '../models/needs.dart';
 import '../models/person.dart';
 import 'consent.dart';
@@ -103,6 +104,103 @@ class DeepSeekClient {
     // Never log the prompt or the health text.
     throw StateError('DeepSeek failed after retries: $lastError');
   }
+
+  /// Ask DeepSeek to choose from a shortlist of real store offers. The model
+  /// never sees the whole database and never sets a price: it only returns ids
+  /// that must exist in [candidates]. The caller re-reads names, prices and
+  /// URLs from the database.
+  Future<List<String>?> pickFromCatalogue({
+    required String query,
+    required List<Person> household,
+    required ParsedNeeds needs,
+    required List<StoreOffer> candidates,
+    required ConsentRecord? consent,
+  }) async {
+    if (consent == null) throw const ConsentRequiredException();
+    if (!enabled || candidates.isEmpty) return null;
+
+    final shortlist = candidates
+        .take(60)
+        .map(
+          (offer) => {
+            'id': offer.id,
+            'name': offer.name,
+            'store': offer.store,
+            'price_eur': offer.priceEur,
+            'pack': offer.pack,
+            'role': offer.role,
+          },
+        )
+        .toList();
+
+    final payload = {
+      'model': _model,
+      'temperature': 0,
+      'response_format': {'type': 'json_object'},
+      'messages': [
+        {'role': 'system', 'content': _cataloguePrompt},
+        {
+          'role': 'user',
+          'content': jsonEncode({
+            'request': query,
+            'household': [
+              for (final person in household)
+                {
+                  'id': person.id,
+                  'age': person.age,
+                  if (needs.needsFor(person.id).allergies.isNotEmpty)
+                    'allergies': needs.needsFor(person.id).allergies.toList(),
+                  if (needs.needsFor(person.id).diets.isNotEmpty)
+                    'diets': needs.needsFor(person.id).diets.toList(),
+                },
+            ],
+            'candidates': shortlist,
+          }),
+        },
+      ],
+    };
+
+    final response = await _client
+        .post(
+          Uri.parse('$_baseUrl/chat/completions'),
+          headers: {
+            'Authorization': 'Bearer $_apiKey',
+            'Content-Type': 'application/json',
+          },
+          body: jsonEncode(payload),
+        )
+        .timeout(const Duration(seconds: 30));
+    if (response.statusCode != 200) {
+      throw StateError('DeepSeek HTTP ${response.statusCode}');
+    }
+    final body = jsonDecode(response.body) as Map<String, dynamic>;
+    final choices = body['choices'] as List<dynamic>;
+    final message =
+        (choices.first as Map<String, dynamic>)['message']
+            as Map<String, dynamic>;
+    final decoded =
+        jsonDecode(message['content'] as String) as Map<String, dynamic>;
+    final allowed = candidates.map((offer) => offer.id).toSet();
+    final picks = (decoded['product_ids'] as List? ?? const [])
+        .map((value) => value.toString())
+        .where(allowed.contains)
+        .toSet()
+        .take(12)
+        .toList(growable: false);
+    return picks;
+  }
+
+  static const String _cataloguePrompt = '''
+You choose real products from a supplied shortlist for a 72-hour emergency bag.
+Return strict JSON: {"product_ids": ["id", "..."]}.
+Rules:
+- Only ids present in `candidates`. Never invent products, prices or stores.
+- Choose at most 12 products that directly answer the request and are age-safe.
+- Respect every listed allergy and diet. If unsure, leave the product out.
+- Prefer shelf-stable, high-calorie, compact, essential items.
+- Do not give medical advice, doses, diagnoses or treatment plans.
+- If nothing fits, return {"product_ids": []}.
+''';
 
   static const String _systemPrompt = '''
 You convert a household's free-text needs into strict JSON for Ready72.

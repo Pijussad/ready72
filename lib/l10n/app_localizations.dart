@@ -1663,6 +1663,60 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'If there is immediate danger, call 112.'**
   String get shelterCall;
+
+  /// No description provided for @catalogueTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Product catalogue'**
+  String get catalogueTitle;
+
+  /// No description provided for @catalogueBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Real prices from public store pages. Search any item and open it at the store.'**
+  String get catalogueBody;
+
+  /// No description provided for @catalogueSearchHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Search products'**
+  String get catalogueSearchHint;
+
+  /// No description provided for @catalogueAll.
+  ///
+  /// In en, this message translates to:
+  /// **'All stores'**
+  String get catalogueAll;
+
+  /// No description provided for @catalogueCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} products'**
+  String catalogueCount(int count);
+
+  /// No description provided for @catalogueNoResults.
+  ///
+  /// In en, this message translates to:
+  /// **'No matching products.'**
+  String get catalogueNoResults;
+
+  /// No description provided for @catalogueAiPick.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask AI to pick'**
+  String get catalogueAiPick;
+
+  /// No description provided for @catalogueAiEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'AI found nothing for this search.'**
+  String get catalogueAiEmpty;
+
+  /// No description provided for @catalogueSettings.
+  ///
+  /// In en, this message translates to:
+  /// **'Product catalogue'**
+  String get catalogueSettings;
 }
 
 class _AppLocalizationsDelegate

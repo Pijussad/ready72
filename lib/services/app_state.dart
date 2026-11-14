@@ -4,6 +4,7 @@ import 'package:clock/clock.dart';
 import 'package:flutter/foundation.dart';
 
 import '../config/app_config.dart';
+import '../data/store_catalogue.dart';
 import '../domain/growth.dart';
 import '../domain/needs_parser.dart';
 import '../domain/plan_optimizer.dart';
@@ -423,6 +424,36 @@ class AppState extends ChangeNotifier {
         orderCreatedAt: _orderCreatedAt,
       ),
     );
+  }
+
+  /// Ask DeepSeek to choose from a shortlist of real offers. The returned
+  /// objects still come from [StoreCatalogue], so the model cannot invent a
+  /// product or a price. Returns an empty list when AI is unavailable.
+  Future<List<StoreOffer>> aiCataloguePicks(
+    String query,
+    List<StoreOffer> candidates,
+  ) async {
+    final consent = _consent;
+    if (consent == null ||
+        !consent.purposes.contains('ai') ||
+        !_ai.configured ||
+        candidates.isEmpty) {
+      return const [];
+    }
+    try {
+      final ids = await _ai.pickFromCatalogue(
+        query: query,
+        household: _household,
+        needs: _needs,
+        candidates: candidates,
+        consent: consent,
+      );
+      if (ids == null || ids.isEmpty) return const [];
+      final byId = {for (final offer in candidates) offer.id: offer};
+      return ids.map((id) => byId[id]).whereType<StoreOffer>().toList();
+    } catch (_) {
+      return const [];
+    }
   }
 
   /// Keep the deterministic parse and only let AI add safe, unknown values.

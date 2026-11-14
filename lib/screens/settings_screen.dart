@@ -32,6 +32,12 @@ class SettingsScreen extends StatelessWidget {
           const SizedBox(height: 20),
           const Hairline(),
           QuietLink(
+            label: l.catalogueSettings,
+            textAlign: TextAlign.left,
+            onTap: () => Navigator.of(context).pushNamed('/catalogue'),
+          ),
+          const SizedBox(height: 16),
+          QuietLink(
             label: l.settingsPrivacy,
             textAlign: TextAlign.left,
             onTap: () => showPrivacySheet(context, state),

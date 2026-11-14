@@ -92,7 +92,7 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get needsPlaceholder =>
-      'Močiutei Onai diagnozuotas diabetas, ji vartoja insulį. Mia yra 2 metų, dar nešioja sauskelnes. Turime šunį.';
+      'Močiutei Marijai diagnozuotas diabetas. Mia yra 2 metų, dar nešioja sauskelnes. Turime šunį.';
 
   @override
   String get youCanMention => 'Galite paminėti';
@@ -909,4 +909,34 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get shelterCall => 'Jei gresia tiesioginis pavojus, skambinkite 112.';
+
+  @override
+  String get catalogueTitle => 'Prekių katalogas';
+
+  @override
+  String get catalogueBody =>
+      'Tikros kainos iš viešų parduotuvių puslapių. Ieškokite prekės ir atidarykite ją parduotuvėje.';
+
+  @override
+  String get catalogueSearchHint => 'Ieškoti prekių';
+
+  @override
+  String get catalogueAll => 'Visos parduotuvės';
+
+  @override
+  String catalogueCount(int count) {
+    return '$count prekių';
+  }
+
+  @override
+  String get catalogueNoResults => 'Atitinkančių prekių nėra.';
+
+  @override
+  String get catalogueAiPick => 'Paprašyti AI parinkti';
+
+  @override
+  String get catalogueAiEmpty => 'AI šiai paieškai nieko nerado.';
+
+  @override
+  String get catalogueSettings => 'Prekių katalogas';
 }

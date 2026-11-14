@@ -33,7 +33,7 @@
   },
   "needsTitle1": "Pasakykite, ko",
   "needsTitle2": "jums reikia.",
-  "needsPlaceholder": "Močiutei Onai diagnozuotas diabetas, ji vartoja insulį. Mia yra 2 metų, dar nešioja sauskelnes. Turime šunį.",
+  "needsPlaceholder": "Močiutei Marijai diagnozuotas diabetas. Mia yra 2 metų, dar nešioja sauskelnes. Turime šunį.",
   "youCanMention": "Galite paminėti",
   "hintMedication": "Vaistai ar būklės",
   "hintAllergies": "Alergijos ar dieta",
@@ -492,5 +492,14 @@
   "shelterOfficial": "Atidaryti oficialų PAGD sąrašą",
   "shelterMap": "Ieškoti žemėlapyje netoliese",
   "shelterNote": "Paieška žemėlapyje yra tik atspirties taškas, ne oficialus sąrašas. Pastatą patvirtinkite savivaldybėje arba PAGD.",
-  "shelterCall": "Jei gresia tiesioginis pavojus, skambinkite 112."
+  "shelterCall": "Jei gresia tiesioginis pavojus, skambinkite 112.",
+  "catalogueTitle": "Prekių katalogas",
+  "catalogueBody": "Tikros kainos iš viešų parduotuvių puslapių. Ieškokite prekės ir atidarykite ją parduotuvėje.",
+  "catalogueSearchHint": "Ieškoti prekių",
+  "catalogueAll": "Visos parduotuvės",
+  "catalogueCount": "{count} prekių",
+  "catalogueNoResults": "Atitinkančių prekių nėra.",
+  "catalogueAiPick": "Paprašyti AI parinkti",
+  "catalogueAiEmpty": "AI šiai paieškai nieko nerado.",
+  "catalogueSettings": "Prekių katalogas"
 }

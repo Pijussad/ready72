@@ -492,5 +492,21 @@
   "shelterOfficial": "Open the official PAGD list",
   "shelterMap": "Search the map near me",
   "shelterNote": "The map search is a starting point, not the official list. Confirm the building with your municipality or PAGD.",
-  "shelterCall": "If there is immediate danger, call 112."
+  "shelterCall": "If there is immediate danger, call 112.",
+  "catalogueTitle": "Product catalogue",
+  "catalogueBody": "Real prices from public store pages. Search any item and open it at the store.",
+  "catalogueSearchHint": "Search products",
+  "catalogueAll": "All stores",
+  "catalogueCount": "{count} products",
+  "catalogueNoResults": "No matching products.",
+  "catalogueAiPick": "Ask AI to pick",
+  "catalogueAiEmpty": "AI found nothing for this search.",
+  "catalogueSettings": "Product catalogue",
+  "@catalogueCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

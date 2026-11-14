@@ -901,4 +901,34 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get shelterCall => 'If there is immediate danger, call 112.';
+
+  @override
+  String get catalogueTitle => 'Product catalogue';
+
+  @override
+  String get catalogueBody =>
+      'Real prices from public store pages. Search any item and open it at the store.';
+
+  @override
+  String get catalogueSearchHint => 'Search products';
+
+  @override
+  String get catalogueAll => 'All stores';
+
+  @override
+  String catalogueCount(int count) {
+    return '$count products';
+  }
+
+  @override
+  String get catalogueNoResults => 'No matching products.';
+
+  @override
+  String get catalogueAiPick => 'Ask AI to pick';
+
+  @override
+  String get catalogueAiEmpty => 'AI found nothing for this search.';
+
+  @override
+  String get catalogueSettings => 'Product catalogue';
 }

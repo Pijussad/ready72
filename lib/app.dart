@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'l10n/app_localizations.dart';
+import 'screens/catalogue_screen.dart';
 import 'screens/checklist_screen.dart';
 import 'screens/consent_screen.dart';
 import 'screens/emergency_screen.dart';
@@ -84,6 +85,8 @@ class Ready72App extends StatelessWidget {
         return const ShelterScreen();
       case '/settings':
         return const SettingsScreen();
+      case '/catalogue':
+        return const CatalogueScreen();
       case '/family':
         return const FamilyScreen();
       case '/needs':
