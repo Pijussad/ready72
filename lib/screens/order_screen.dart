@@ -346,6 +346,15 @@ class _StoreItemRow extends StatelessWidget {
                     item.quantity > 1 ? '$name ×${item.quantity}' : name,
                     style: AppType.input,
                   ),
+                  if (item.product.offer case final offer?) ...[
+                    const SizedBox(height: 3),
+                    Text(
+                      offer.name,
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
+                      style: AppType.small,
+                    ),
+                  ],
                   if (subtitle.isNotEmpty) ...[
                     const SizedBox(height: 3),
                     Text(

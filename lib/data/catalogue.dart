@@ -1,4 +1,5 @@
 import '../models/product.dart';
+import 'offer_matches.dart';
 
 /// Demo catalogue used by the optimiser and order splitter.
 ///
@@ -6,7 +7,7 @@ import '../models/product.dart';
 /// listings. Sixteen Barbora rows were checked live on 2026-11-13 and are
 /// marked `verified: true`; the rest are unverified fixtures. Weights, pack
 /// sizes are demo data.
-const List<Product> catalogue = [
+const List<Product> fixtureCatalogue = [
   Product(
     id: 'meal-chicken',
     nameEn: 'Chicken rice expedition meal',
@@ -1661,11 +1662,34 @@ const List<Product> catalogue = [
   ),
 ];
 
+List<Product>? _resolved;
+Map<String, Product>? _resolvedIndex;
+int _resolvedRevision = -1;
+
+void _resolve() {
+  if (_resolved != null && _resolvedRevision == OfferMatches.revision) return;
+  final products = [
+    for (final product in fixtureCatalogue)
+      if (OfferMatches.of(product.id) case final match?)
+        product.withOffer(match)
+      else
+        product,
+  ];
+  _resolved = List.unmodifiable(products);
+  _resolvedIndex = {for (final product in products) product.id: product};
+  _resolvedRevision = OfferMatches.revision;
+}
+
+/// The curated catalogue with real store prices applied where a listing was
+/// matched (see [OfferMatches]); otherwise the fixture rows.
+List<Product> get catalogue {
+  _resolve();
+  return _resolved!;
+}
+
 Product? productById(String id) {
-  for (final product in catalogue) {
-    if (product.id == id) return product;
-  }
-  return null;
+  _resolve();
+  return _resolvedIndex![id];
 }
 
 List<Product> productsForStore(Store store) =>

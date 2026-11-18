@@ -13,7 +13,7 @@ void main() {
     final ona = needs.needsFor('p-ona');
     final mia = needs.needsFor('p-mia');
     expect(ona.conditions, contains('diabetes'));
-    expect(ona.medications, contains('insulin'));
+    expect(ona.medications, isEmpty);
     expect(ona.needsCooling, isTrue);
     expect(mia.diapers, isTrue);
     expect(needs.petTypes, contains('dog'));
@@ -21,7 +21,7 @@ void main() {
 
   test('Lithuanian text maps too', () {
     final text =
-        'Močiutei Onai yra diabetas, ji vartoja insulį. Mia dar nešioja sauskelnes. Turime šunį.';
+        'Močiutei Mariai yra diabetas, ji vartoja insulį. Mia dar nešioja sauskelnes. Turime šunį.';
     final needs = parser.parse(text, household);
     expect(needs.needsFor('p-ona').conditions, contains('diabetes'));
     expect(needs.needsFor('p-ona').medications, contains('insulin'));
@@ -31,7 +31,7 @@ void main() {
 
   test('allergies and diets are canonicalised', () {
     final needs = parser.parse(
-      'Rūta is vegetarian and has a nut allergy. Ona is dairy free.',
+      'Rūta is vegetarian and has a nut allergy. Maria is dairy free.',
       household,
     );
     expect(needs.needsFor('p-ruta').allergies, contains('nuts'));
@@ -51,7 +51,7 @@ void main() {
 
   test('never extracts a medicine dose', () {
     final needs = parser.parse(
-      'Ona takes insulin 20 units twice a day.',
+      'Maria takes insulin 20 units twice a day.',
       household,
     );
     final json = jsonEncode(needs.toJson());
@@ -82,7 +82,7 @@ void main() {
       'No pets.',
       'Nėra augintinių.',
       'Rūta is not pregnant.',
-      'Ona is not allergic to nuts.',
+      'Maria is not allergic to nuts.',
     ]) {
       final needs = parser.parse(text, household);
       expect(needs.petTypes, isEmpty, reason: text);
@@ -118,7 +118,7 @@ void main() {
 
   test('Lithuanian inflections are understood', () {
     final needs = parser.parse(
-      'Jonas turi aukštą kraujospūdį. Ona turi diabetą ir Rūta yra nėščia.',
+      'Jonas turi aukštą kraujospūdį. Maria turi diabetą ir Rūta yra nėščia.',
       household,
     );
     expect(needs.needsFor('p-jonas').conditions, contains('hypertension'));

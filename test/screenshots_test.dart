@@ -144,7 +144,7 @@ void main() {
       await tester.pumpAndSettle();
       await shot('11_emergency');
 
-      await tester.tap(find.text('Ona’s bag').first);
+      await tester.tap(find.text('Maria’s bag').first);
       await tester.pumpAndSettle();
       await shot('12_checklist');
 

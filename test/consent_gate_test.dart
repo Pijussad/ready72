@@ -34,7 +34,7 @@ void main() {
     final state = AppState(storage, ai: spy);
     await state.init();
 
-    state.previewNeeds('Ona has diabetes and takes insulin.');
+    state.previewNeeds('Maria has diabetes and takes insulin.');
     await state.setHousehold(DemoHousehold.people);
     expect(spy.calls, 0);
 

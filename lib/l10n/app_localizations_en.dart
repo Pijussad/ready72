@@ -92,7 +92,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get needsPlaceholder =>
-      'Grandma Ona has diabetes and takes insulin. Mia is 2 and still in diapers. We have a dog.';
+      'Grandma Maria has diabetes. Mia is 2 and still in diapers. We have a dog.';
 
   @override
   String get youCanMention => 'You can mention';

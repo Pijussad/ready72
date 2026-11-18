@@ -1,0 +1,527 @@
+{
+ "version": 1,
+ "matches": {
+  "canned-fish": {
+   "offerId": "barbora:000000000000135240",
+   "store": "barbora",
+   "name": "Skumbrės aliejuje, 240 g",
+   "priceEur": 1.89,
+   "url": "https://barbora.lt/p/skumbres-aliejuje-240-g",
+   "pack": "240 g",
+   "scrapedFrom": "store-catalogue"
+  },
+  "canned-meat": {
+   "offerId": "barbora:000000000000942981",
+   "store": "barbora",
+   "name": "Konservuota troškinta jautiena ECON, 230 g",
+   "priceEur": 1.49,
+   "url": "https://barbora.lt/p/konservuota-troskinta-jautiena-econ-230-g",
+   "pack": "230 g",
+   "scrapedFrom": "store-catalogue"
+  },
+  "canned-beans": {
+   "offerId": "barbora:000000000001049027",
+   "store": "barbora",
+   "name": "Konservuotos keptos pupelės EXTRA LINE pomidorų padaže, 400 g",
+   "priceEur": 0.65,
+   "url": "https://barbora.lt/p/konservuotos-keptos-pupeles-extra-line-pomidoru-padaze-400-g",
+   "pack": "400 g",
+   "scrapedFrom": "store-catalogue"
+  },
+  "nut-mix": {
+   "offerId": "barbora:000000000000836791",
+   "store": "barbora",
+   "name": "Kepintų ir sūdytų riešutų mišinys ARIMEX, 300 g",
+   "priceEur": 2.19,
+   "url": "https://barbora.lt/p/kepintu-ir-sudytu-riesutu-misinys-arimex-300-g",
+   "pack": "300 g",
+   "scrapedFrom": "store-catalogue"
+  },
+  "crackers": {
+   "offerId": "barbora:000000000000886721",
+   "store": "barbora",
+   "name": "Krekeriai TUC MINI, grietinės ir svogūnų skonio, 100 g",
+   "priceEur": 1.55,
+   "url": "https://barbora.lt/p/krekeriai-tuc-mini-grietines-ir-svogunu-skonio-100-g",
+   "pack": "100 g",
+   "scrapedFrom": "store-catalogue"
+  },
+  "chocolate": {
+   "offerId": "barbora:000000000001139772",
+   "store": "barbora",
+   "name": "Juodasis šokoladas (56 %) ROSHEN, 85 g",
+   "priceEur": 1.49,
+   "url": "https://barbora.lt/p/juodasis-sokoladas-56-proc-roshen-85-g",
+   "pack": "85 g",
+   "scrapedFrom": "store-catalogue"
+  },
+  "noodles": {
+   "offerId": "barbora:000000000000178391",
+   "store": "barbora",
+   "name": "GINTARINIAI makaronai (kriauklės), 400 g",
+   "priceEur": 0.85,
+   "url": "https://barbora.lt/p/gintariniai-makaronai-kriaukles-400-g",
+   "pack": "400 g",
+   "scrapedFrom": "store-catalogue"
+  },
+  "oats": {
+   "offerId": "barbora:000000000000131093",
+   "store": "barbora",
+   "name": "Avižiniai dribsniai GALINTA, 500 g",
+   "priceEur": 0.89,
+   "url": "https://barbora.lt/p/aviziniai-dribsniai-galinta-500-g",
+   "pack": "500 g",
+   "scrapedFrom": "store-catalogue"
+  },
+  "formula": {
+   "offerId": "barbora:000000000000804171",
+   "store": "barbora",
+   "name": "Ekologiškas  tolesnio maitinimo kūdikių pieno mišinys (nuo 6 mėnesių) HiPP 2 PURE, 300 g",
+   "priceEur": 7.49,
+   "url": "https://barbora.lt/p/ekologiskas-pieno-misinys-hipp-2-organic-nuo-6-men-300-g",
+   "pack": "300 g",
+   "scrapedFrom": "store-catalogue"
+  },
+  "baby-food": {
+   "offerId": "barbora:000000000000860148",
+   "store": "barbora",
+   "name": "Bananų ir obuolių tyrelė KUBUŠ, 100 g",
+   "priceEur": 0.99,
+   "url": "https://barbora.lt/p/bananu-ir-obuoliu-tyrele-kubus-100-g",
+   "pack": "100 g",
+   "scrapedFrom": "store-catalogue"
+  },
+  "toddler-meal": {
+   "offerId": "barbora:000000000000799499",
+   "store": "barbora",
+   "name": "Geriamoji bananų ir braškių tyrė SEMPER, nuo 12 mėn., 200 ml",
+   "priceEur": 1.18,
+   "url": "https://barbora.lt/p/geriamoji-bananu-ir-braskiu-tyre-smoothie-nuo-12-men-200-ml",
+   "pack": "0.2 l",
+   "scrapedFrom": "store-catalogue"
+  },
+  "dog-food": {
+   "offerId": "barbora:000000000001250941",
+   "store": "barbora",
+   "name": "Šunų ėdalas LOVETT su paukštiena (dešra), 400 g",
+   "priceEur": 0.99,
+   "url": "https://barbora.lt/p/sunu-edalas-lovett-su-paukstiena-desra-400-g",
+   "pack": "400 g",
+   "scrapedFrom": "store-catalogue"
+  },
+  "cat-food": {
+   "offerId": "barbora:000000000001316898",
+   "store": "barbora",
+   "name": "Konservuotas kačių ėdalas su jautiena HAPPY TAILS, 415 g",
+   "priceEur": 0.49,
+   "url": "https://barbora.lt/p/konservuotas-kaciu-edalas-su-jautiena-happy-tails-415-g",
+   "pack": "415 g",
+   "scrapedFrom": "store-catalogue"
+  },
+  "dog-dry": {
+   "offerId": "barbora:000000000001302511",
+   "store": "barbora",
+   "name": "Sausasis šunų ėdalas PEDIGREE MINI,su višt. ir daržov.,500 g, 500 g",
+   "priceEur": 3.25,
+   "url": "https://barbora.lt/p/sausasis-sunu-edalas-pedigree-mini-su-vist-ir-darzov-500-g-500-g",
+   "pack": "500 g",
+   "scrapedFrom": "store-catalogue"
+  },
+  "tea": {
+   "offerId": "barbora:000000000000030787",
+   "store": "barbora",
+   "name": "Biri juodoji arbata DILMAH COP, 50 g",
+   "priceEur": 1.19,
+   "url": "https://barbora.lt/p/biri-juodoji-arbata-dilmah-cop-50-g",
+   "pack": "50 g",
+   "scrapedFrom": "store-catalogue"
+  },
+  "water-05": {
+   "offerId": "barbora:000000000001289201",
+   "store": "barbora",
+   "name": "Natūralus negazuotas mineralinis vanduo NORVIL, 500 ml",
+   "priceEur": 0.22,
+   "url": "https://barbora.lt/p/naturalus-negazuotas-mineralinis-vanduo-norvil-500-ml-89201",
+   "pack": "0.5 l",
+   "scrapedFrom": "store-catalogue"
+  },
+  "water-15": {
+   "offerId": "barbora:000000000001289200",
+   "store": "barbora",
+   "name": "Natūralus negazuotas mineralinis vanduo NORVIL, 1.5 l",
+   "priceEur": 0.35,
+   "url": "https://barbora.lt/p/naturalus-negazuotas-mineralinis-vanduo-norvil-1-5-l",
+   "pack": "1.5 l",
+   "scrapedFrom": "store-catalogue"
+  },
+  "water-filter": {
+   "offerId": "decathlon:c916ba70-1c8f-4121-a4a5-75a3e223a8bc",
+   "store": "decathlon",
+   "name": "Minkštas, suspaudžiamas vandens butelio filtras „MT500“",
+   "priceEur": 14.0,
+   "url": "https://www.decathlon.lt/p/307923-91840-minkstas-suspaudziamas-vandens-butelio-filtras-mt500.html",
+   "pack": "",
+   "scrapedFrom": "store-catalogue"
+  },
+  "first-aid": {
+   "offerId": "decathlon:e8698d8f-7253-44d8-8e54-6c0d82a5656c",
+   "store": "decathlon",
+   "name": "Vaistinėlė 100, 41 reikmuo",
+   "priceEur": 13.0,
+   "url": "https://www.decathlon.lt/p/324531-94214-vaistinele-100-41-reikmuo.html",
+   "pack": "",
+   "scrapedFrom": "store-catalogue"
+  },
+  "plasters": {
+   "offerId": "eurovaistine:eurocare-hidrokoloidiniai-pusliu-pleistrai-6-x-1-8-cm-5-vnt-228952",
+   "store": "eurovaistine",
+   "name": "EUROCARE hidrokoloidiniai pūslių pleistrai, 6,1 x 1,8 cm, 5 vnt.",
+   "priceEur": 5.09,
+   "url": "https://www.eurovaistine.lt/p/eurocare-hidrokoloidiniai-pusliu-pleistrai-6-x-1-8-cm-5-vnt-228952",
+   "pack": "5 vnt.",
+   "scrapedFrom": "store-catalogue"
+  },
+  "med-pouch": {
+   "offerId": "eurovaistine:anabox-dienos-vaistu-dezute-1-vnt",
+   "store": "eurovaistine",
+   "name": "ANABOX dienos vaistų dėžutė, 1 vnt.",
+   "priceEur": 3.5,
+   "url": "https://www.eurovaistine.lt/p/anabox-dienos-vaistu-dezute-1-vnt",
+   "pack": "1 vnt.",
+   "scrapedFrom": "store-catalogue"
+  },
+  "toothbrush": {
+   "offerId": "barbora:000000000001055678",
+   "store": "barbora",
+   "name": "Dantų šepetėlis JORDAN CLEAN SMILE MEDIUM, 1 vnt.",
+   "priceEur": 1.65,
+   "url": "https://barbora.lt/p/dantu-sepetelis-jordan-clean-smile-medium-1-vnt",
+   "pack": "1 vnt.",
+   "scrapedFrom": "store-catalogue"
+  },
+  "toilet-paper": {
+   "offerId": "barbora:000000000001392014",
+   "store": "barbora",
+   "name": "Tualetinis popierius BLOOM, 8 rul., 160 lapelių, 8 vnt.",
+   "priceEur": 2.19,
+   "url": "https://barbora.lt/p/tualet-popierius-bloom-regular-8-rit-2-sluoksn-160-lap-8-vnt",
+   "pack": "8 vnt.",
+   "scrapedFrom": "store-catalogue"
+  },
+  "towel": {
+   "offerId": "decathlon:279a9e5f-fbba-4d3f-8b74-845b5347c762",
+   "store": "decathlon",
+   "name": "Dvipusis mikropluošto rankšluostis, šviesiai žalias",
+   "priceEur": 5.0,
+   "url": "https://www.decathlon.lt/p/161553-176931-dvipusis-mikropluosto-ranksluostis-sviesiai-zalias.html",
+   "pack": "",
+   "scrapedFrom": "store-catalogue"
+  },
+  "soap": {
+   "offerId": "barbora:000000000001350513",
+   "store": "barbora",
+   "name": "DOXA ACTIVATED CHARCOAL tualetinis muilas, 100 g",
+   "priceEur": 0.99,
+   "url": "https://barbora.lt/p/gabalinis-tualetinis-muilas-doxa-activated-charcoal-100-g",
+   "pack": "100 g",
+   "scrapedFrom": "store-catalogue"
+  },
+  "pads": {
+   "offerId": "barbora:000000000000063938",
+   "store": "barbora",
+   "name": "Higieniniai paketai BELLA CLASSIC NOVA COMFORT, 10 vnt.",
+   "priceEur": 1.59,
+   "url": "https://barbora.lt/p/higieniniai-paketai-bella-classic-nova-comfort-10-vnt",
+   "pack": "10 vnt.",
+   "scrapedFrom": "store-catalogue"
+  },
+  "rain-jacket": {
+   "offerId": "decathlon:7dd6954d-13bf-43aa-8b06-3223b520d0bf",
+   "store": "decathlon",
+   "name": "Vyriška neperpučiama ir neperšlampama žygių striukė „Raincut Full Zip“, juoda",
+   "priceEur": 15.0,
+   "url": "https://www.decathlon.lt/p/350837-221643-vyriska-neperpuciama-ir-neperslampama-zygiu-striuke-raincut-full-zip-juoda.html",
+   "pack": "",
+   "scrapedFrom": "store-catalogue"
+  },
+  "hat-gloves": {
+   "offerId": "decathlon:89edfd1d-f800-4e34-b47f-320a9ce478a9",
+   "store": "decathlon",
+   "name": "Suaugusiųjų slidinėjimo kepurė „Firstheat“",
+   "priceEur": 3.0,
+   "url": "https://www.decathlon.lt/p/165131-6191-suaugusiuju-slidinejimo-kepure-firstheat.html",
+   "pack": "",
+   "scrapedFrom": "store-catalogue"
+  },
+  "spare-shoes": {
+   "offerId": "decathlon:54c62aef-7bf8-4d0a-b0c6-4282365833cc",
+   "store": "decathlon",
+   "name": "Vyriški kalnų žygio batai MH500, pilki",
+   "priceEur": 47.0,
+   "url": "https://www.decathlon.lt/p/302199-520560-vyriski-kalnu-zygio-batai-mh500-pilki.html",
+   "pack": "",
+   "scrapedFrom": "store-catalogue"
+  },
+  "gaiter": {
+   "offerId": "decathlon:e90db93b-00ef-4d8c-9363-598f94217230",
+   "store": "decathlon",
+   "name": "Universali galvos juosta ir kaklo mova „Kiprun“, mėlyna ir rožinė",
+   "priceEur": 4.0,
+   "url": "https://www.decathlon.lt/p/2523-512305-universali-galvos-juosta-ir-kaklo-mova-kiprun-melyna-ir-rozine.html",
+   "pack": "",
+   "scrapedFrom": "store-catalogue"
+  },
+  "trousers": {
+   "offerId": "decathlon:4f204a65-645b-4175-ada5-e0384ba0d160",
+   "store": "decathlon",
+   "name": "Mot. lininės žygių kelnės „NH500“, purpurinės",
+   "priceEur": 14.0,
+   "url": "https://www.decathlon.lt/p/346726-401563-mot-linines-zygiu-kelnes-nh500-purpurines.html",
+   "pack": "",
+   "scrapedFrom": "store-catalogue"
+  },
+  "tent": {
+   "offerId": "decathlon:e3418830-1a4d-485d-9d64-657bf1e94aa7",
+   "store": "decathlon",
+   "name": "Dvivietė palapinė „MH100 Fresh & Black“",
+   "priceEur": 55.0,
+   "url": "https://www.decathlon.lt/p/313100-66992-dviviete-palapine-mh100-fresh-black.html",
+   "pack": "",
+   "scrapedFrom": "store-catalogue"
+  },
+  "headlamp": {
+   "offerId": "barbora:000000000001341278",
+   "store": "barbora",
+   "name": "Galvos žibintas HENSKE, HG-HL001",
+   "priceEur": 4.99,
+   "url": "https://barbora.lt/p/galvos-zibintas-henske-1-vnt",
+   "pack": "",
+   "scrapedFrom": "store-catalogue"
+  },
+  "whistle": {
+   "offerId": "decathlon:d8ae458a-7e84-4ff4-9b72-3bd708e22da0",
+   "store": "decathlon",
+   "name": "Švilpukas",
+   "priceEur": 3.0,
+   "url": "https://www.decathlon.lt/p/2861-39415-svilpukas.html",
+   "pack": "",
+   "scrapedFrom": "store-catalogue"
+  },
+  "lighter": {
+   "offerId": "barbora:000000000001378110",
+   "store": "barbora",
+   "name": "Dujinis žiebtuvėlis CORUBA, butanas",
+   "priceEur": 2.49,
+   "url": "https://barbora.lt/p/dujinis-ziebtuvelis-coruba-butane-1-vnt",
+   "pack": "",
+   "scrapedFrom": "store-catalogue"
+  },
+  "duct-tape": {
+   "offerId": "decathlon:b4d8decc-4493-4024-8907-8675a96ad29e",
+   "store": "decathlon",
+   "name": "Lipni juosta, 7,5 cm pločio, juoda",
+   "priceEur": 2.0,
+   "url": "https://www.decathlon.lt/p/382614-424030-lipni-juosta-75-cm-plocio-juoda.html",
+   "pack": "",
+   "scrapedFrom": "store-catalogue"
+  },
+  "compass": {
+   "offerId": "decathlon:93fd6350-00b1-4f43-932e-ce851ffcc608",
+   "store": "decathlon",
+   "name": "Kompaktiškas kompasas su karabinu orientaciniam sportui „50“",
+   "priceEur": 6.0,
+   "url": "https://www.decathlon.lt/p/12251-37793-kompaktiskas-kompasas-su-karabinu-orientaciniam-sportui-50.html",
+   "pack": "",
+   "scrapedFrom": "store-catalogue"
+  },
+  "notebook": {
+   "offerId": "barbora:000000000001266558",
+   "store": "barbora",
+   "name": "Sąsiuvinis langeliais, 24 lapų, Premium",
+   "priceEur": 0.85,
+   "url": "https://barbora.lt/p/sasiuvinis-langeliais-24-lapu-1-vnt",
+   "pack": "",
+   "scrapedFrom": "store-catalogue"
+  },
+  "pet-leash": {
+   "offerId": "barbora:000000000001313903",
+   "store": "barbora",
+   "name": "Gyvūnų pavadėlis, 20mmx1,2m, A-1059",
+   "priceEur": 3.99,
+   "url": "https://barbora.lt/p/gyvunu-pavadelis-lovett-20-mm-x-1-2-m-1-vnt",
+   "pack": "",
+   "scrapedFrom": "store-catalogue"
+  },
+  "diapers": {
+   "offerId": "barbora:000000000001361981",
+   "store": "barbora",
+   "name": "Sauskelnės HUGGIES OVERNIGHTS S4, 26 vnt., 26 vnt.",
+   "priceEur": 14.99,
+   "url": "https://barbora.lt/p/sauskelnes-huggies-overnights-s-4-26-vnt-26-vnt",
+   "pack": "26 vnt.",
+   "scrapedFrom": "store-catalogue"
+  },
+  "seeds": {
+   "offerId": "barbora:000000000001117238",
+   "store": "barbora",
+   "name": "Lukštentos moliūgų sėklos EXTRA LINE, 150 g",
+   "priceEur": 0.94,
+   "url": "https://barbora.lt/p/lukstentos-moliugu-seklos-extra-line-150-g",
+   "pack": "150 g",
+   "scrapedFrom": "store-catalogue"
+  },
+  "energy-bar": {
+   "offerId": "barbora:000000000001385267",
+   "store": "barbora",
+   "name": "Batonėlis su riešutais ir medumi TEKMAR, 35 g",
+   "priceEur": 0.85,
+   "url": "https://barbora.lt/p/batonelis-su-riesutais-ir-medumi-tekmar-35-g",
+   "pack": "35 g",
+   "scrapedFrom": "store-catalogue"
+  },
+  "dried-fruit": {
+   "offerId": "barbora:000000000001117241",
+   "store": "barbora",
+   "name": "Džiovintos slyvos EXTRA LINE, 200 g",
+   "priceEur": 1.09,
+   "url": "https://barbora.lt/p/dziovintos-slyvos-extra-line-200-g",
+   "pack": "200 g",
+   "scrapedFrom": "store-catalogue"
+  },
+  "wet-wipes": {
+   "offerId": "barbora:000000000001397561",
+   "store": "barbora",
+   "name": "Drėgnos servetėlės GOWIPES, 24 vnt.",
+   "priceEur": 1.79,
+   "url": "https://barbora.lt/p/dregnosios-serveteles-gowipes-for-dummies-toys-24-vnt-24-vnt",
+   "pack": "24 vnt.",
+   "scrapedFrom": "store-catalogue"
+  },
+  "base-layer": {
+   "offerId": "decathlon:dc4082ce-58ec-41ad-93d6-255448c65cf1",
+   "store": "decathlon",
+   "name": "Visų lyčių ilgarankoviai besiūliai termoizoliaciniai marškinėliai „Keepdry“",
+   "priceEur": 12.0,
+   "url": "https://www.decathlon.lt/p/349109-515201-visu-lyciu-ilgarankoviai-besiuliai-termoizoliaciniai-marskineliai-keepdry.html",
+   "pack": "",
+   "scrapedFrom": "store-catalogue"
+  },
+  "socks": {
+   "offerId": "decathlon:fce959ea-d155-4a28-82fb-35a02abda038",
+   "store": "decathlon",
+   "name": "Pusilgės bėgimo kojinės „Run 100“, 3 poros, baltos",
+   "priceEur": 4.0,
+   "url": "https://www.decathlon.lt/p/11690-66857-pusilges-begimo-kojines-run-100-3-poros-baltos.html",
+   "pack": "3 vnt.",
+   "scrapedFrom": "store-catalogue"
+  },
+  "backpack-adult": {
+   "offerId": "decathlon:e32b87d8-7482-472c-836a-868011870eb5",
+   "store": "decathlon",
+   "name": "Žygių kuprinė „Arpenaz 100 “, 27 l, žalia",
+   "priceEur": 19.0,
+   "url": "https://www.decathlon.lt/p/380447-399687-zygiu-kuprine-arpenaz-100-27-l-zalia.html",
+   "pack": "27 l",
+   "scrapedFrom": "store-catalogue"
+  },
+  "backpack-child": {
+   "offerId": "decathlon:930fc04c-b446-437c-b622-4acf2ed8ee1b",
+   "store": "decathlon",
+   "name": "Vaikiška kuprinė su 2 kišenėmis „Play 100“, 10 l talpos",
+   "priceEur": 10.0,
+   "url": "https://www.decathlon.lt/p/363170-386977-vaikiska-kuprine-su-2-kisenemis-play-100-10-l-talpos.html",
+   "pack": "10 l",
+   "scrapedFrom": "store-catalogue"
+  },
+  "backpack-toddler": {
+   "offerId": "decathlon:39e6f669-3fea-4b07-ae55-07dc1649ab36",
+   "store": "decathlon",
+   "name": "Vaikiška žygių kuprinė „MH100“, 2–5 metų vaikams, 5 litrų, mėlyna",
+   "priceEur": 6.0,
+   "url": "https://www.decathlon.lt/p/308368-46411-vaikiska-zygiu-kuprine-mh100-2-5-metu-vaikams-5-litru-melyna.html",
+   "pack": "",
+   "scrapedFrom": "store-catalogue"
+  },
+  "sleeping-bag": {
+   "offerId": "decathlon:9078eba9-ee1e-410f-aaa6-db59d8d8aca8",
+   "store": "decathlon",
+   "name": "Turistinis miegmaišis „Arpenaz 15° C“",
+   "priceEur": 20.0,
+   "url": "https://www.decathlon.lt/p/339032-139732-turistinis-miegmaisis-arpenaz-15-c.html",
+   "pack": "",
+   "scrapedFrom": "store-catalogue"
+  },
+  "batteries": {
+   "offerId": "barbora:000000000001095227",
+   "store": "barbora",
+   "name": "Elementai WESTROM AA, LR6, 1.5V, 8 vnt.",
+   "priceEur": 3.49,
+   "url": "https://barbora.lt/p/elementai-westrom-aa-lr-6-1-5-v-8-vnt-8-vnt",
+   "pack": "8 vnt.",
+   "scrapedFrom": "store-catalogue"
+  },
+  "metal-cup": {
+   "offerId": "decathlon:c1368cd9-fd5b-41e9-9b07-1e74b2a8c4b6",
+   "store": "decathlon",
+   "name": "Nerūdijančio plieno puodelis stovyklavimui ir žygiams „500“, 0,3 l, mėlynas",
+   "priceEur": 6.0,
+   "url": "https://www.decathlon.lt/p/359595-311005-nerudijancio-plieno-puodelis-stovyklavimui-ir-zygiams-500-03-l-melynas.html",
+   "pack": "0.3 l",
+   "scrapedFrom": "store-catalogue"
+  },
+  "spork": {
+   "offerId": "decathlon:5f8a29eb-924d-4c6d-a6fd-107ba89a4bdf",
+   "store": "decathlon",
+   "name": "3 plastikinių turistinių stalo įrankių (peilio, šakutės, šaukšto), rinkinys",
+   "priceEur": 2.0,
+   "url": "https://www.decathlon.lt/p/171676-409630-3-plastikiniu-turistiniu-stalo-irankiu-peilio-sakutes-sauksto-rinkinys.html",
+   "pack": "",
+   "scrapedFrom": "store-catalogue"
+  },
+  "child-toy": {
+   "offerId": "barbora:000000000001343497",
+   "store": "barbora",
+   "name": "Knyga GALINGIEJI ŠUNYČIAI. SPALVINIMO KNYGELĖ, 1 vnt.",
+   "priceEur": 3.45,
+   "url": "https://barbora.lt/p/knyga-galingieji-sunyciai-spalvinimo-knygele-1-vnt",
+   "pack": "1 vnt.",
+   "scrapedFrom": "store-catalogue"
+  },
+  "coffee": {
+   "offerId": "barbora:000000000000887802",
+   "store": "barbora",
+   "name": "Tirpioji kava MONTE PERO CLASSIC, 100 g",
+   "priceEur": 2.79,
+   "url": "https://barbora.lt/p/tirpioji-kava-monte-pero-classic-100-g",
+   "pack": "100 g",
+   "scrapedFrom": "store-catalogue"
+  },
+  "usb-cable": {
+   "offerId": "decathlon:09d891a8-2afd-4e73-95b8-fda44beabe8d",
+   "store": "decathlon",
+   "name": "USB-C–USB-C laidas, 60 W, 50 cm",
+   "priceEur": 3.5,
+   "url": "https://www.decathlon.lt/p/356164-298687-usb-c-usb-c-laidas-60-w-50-cm.html",
+   "pack": "",
+   "scrapedFrom": "store-catalogue"
+  },
+  "fleece": {
+   "offerId": "decathlon:b212e184-8fff-4ad7-a0ed-e0f913bae8ce",
+   "store": "decathlon",
+   "name": "Flisas „500“, mėlynas",
+   "priceEur": 18.0,
+   "url": "https://www.decathlon.lt/p/326668-289233-flisas-500-melynas.html",
+   "pack": "",
+   "scrapedFrom": "store-catalogue"
+  },
+  "stove": {
+   "offerId": "decathlon:14f50dba-8729-4260-a95c-e450abd2aa41",
+   "store": "decathlon",
+   "name": "Kompaktiška turistinė viryklė „Bleuet“",
+   "priceEur": 25.0,
+   "url": "https://www.decathlon.lt/p/380642-419984-kompaktiska-turistine-virykle-bleuet.html",
+   "pack": "",
+   "scrapedFrom": "store-catalogue"
+  }
+ }
+}

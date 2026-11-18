@@ -44,6 +44,10 @@ Every row has:
 - Eurovaistinė `robots.txt` disallows search-result URLs; only public category pages from its sitemap were read.
 - No account, cart, checkout, personal data or payment flow was touched.
 
+## How the plan uses real prices
+
+`tool/match_fixtures.py` matches each curated product (`lib/data/catalogue.dart`) to the cheapest sensible real offer using reviewed Lithuanian keyword, exclusion, store and price-band rules, and writes `assets/catalogue/matches.json` (about 20 KB, loaded at start-up). The optimiser keeps the curated weight, calories, shelf life, allergens and age range, because the carry and safety guardrails depend on them; only price, store, title and URL come from the offer, and the line counts as verified. Products with no confident match (for example CPR mask, tourniquet, FFP2 masks, hand sanitiser, emergency blanket, expedition meals) keep their fixture price and stay flagged unverified. Review `python3 tool/match_fixtures.py` output after every re-scrape.
+
 ## Rebuild
 
 ```bash
@@ -51,5 +55,6 @@ python3 tool/scrape/barbora.py
 python3 tool/scrape/decathlon.py       # needs Chrome on :9222
 python3 tool/scrape/eurovaistine.py
 python3 tool/build_catalogue.py
+python3 tool/match_fixtures.py
 flutter test test/store_catalogue_test.dart
 ```

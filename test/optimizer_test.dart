@@ -85,7 +85,7 @@ void main() {
 
     test('excludes allergens for the allergic person everywhere', () {
       final allergyNeeds = parser.parse(
-        '${DemoHousehold.needsText} Ona has a severe nut allergy.',
+        '${DemoHousehold.needsText} Maria has a severe nut allergy.',
         household,
       );
       final req = PlanRequest(
@@ -110,7 +110,7 @@ void main() {
 
     test('vegetarian and vegan diets are respected', () {
       final vegNeeds = parser.parse(
-        'Rūta is vegetarian. Ona is vegan.',
+        'Rūta is vegetarian. Maria is vegan.',
         household,
       );
       final req = PlanRequest(

@@ -35,6 +35,7 @@ flutter:
   assets:
     - assets/catalogue/products.json
     - assets/catalogue/meta.json
+    - assets/catalogue/matches.json
 
   fonts:
     - family: Inter

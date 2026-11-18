@@ -42,7 +42,7 @@ void main() {
       ('Jonas', '34', '82'),
       ('Rūta', '32', '64'),
       ('Mia', '2', '13'),
-      ('Ona', '71', '62'),
+      ('Maria', '71', '62'),
     ];
     for (var i = 0; i < people.length; i++) {
       final row = people[i];
@@ -131,7 +131,7 @@ void main() {
     await tester.pumpAndSettle();
     await tester.tap(find.textContaining('SUBSCRIBE'));
     await tester.pumpAndSettle();
-    expect(find.textContaining('Ona'), findsWidgets);
+    expect(find.textContaining('Maria'), findsWidgets);
     expect(find.text('MARK ALL PACKED'), findsOneWidget);
     expect(state.subscriptionActive, isTrue);
 

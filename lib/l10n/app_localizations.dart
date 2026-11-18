@@ -257,7 +257,7 @@ abstract class AppLocalizations {
   /// No description provided for @needsPlaceholder.
   ///
   /// In en, this message translates to:
-  /// **'Grandma Ona has diabetes and takes insulin. Mia is 2 and still in diapers. We have a dog.'**
+  /// **'Grandma Maria has diabetes. Mia is 2 and still in diapers. We have a dog.'**
   String get needsPlaceholder;
 
   /// No description provided for @youCanMention.

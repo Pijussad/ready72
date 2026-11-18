@@ -18,6 +18,7 @@ catalogue:
 	python3 tool/scrape/decathlon.py
 	python3 tool/scrape/eurovaistine.py
 	python3 tool/build_catalogue.py
+	python3 tool/match_fixtures.py
 
 web:
 	flutter build web --release --pwa-strategy=none --no-web-resources-cdn

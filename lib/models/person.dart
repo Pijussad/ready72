@@ -50,9 +50,9 @@ class DemoHousehold {
     Person(id: 'p-jonas', name: 'Jonas', age: 34, weightKg: 82),
     Person(id: 'p-ruta', name: 'Rūta', age: 32, weightKg: 64),
     Person(id: 'p-mia', name: 'Mia', age: 2, weightKg: 13),
-    Person(id: 'p-ona', name: 'Ona', age: 71, weightKg: 62),
+    Person(id: 'p-ona', name: 'Maria', age: 71, weightKg: 62),
   ];
 
   static const String needsText =
-      'Grandma Ona has diabetes and takes insulin. Mia is 2 and still in diapers. We have a dog.';
+      'Grandma Maria has diabetes. Mia is 2 and still in diapers. We have a dog.';
 }

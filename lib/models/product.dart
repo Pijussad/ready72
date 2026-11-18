@@ -1,3 +1,5 @@
+import 'offer_match.dart';
+
 enum Store { barbora, rimi, eurovaistine, decathlon }
 
 extension StoreDetails on Store {
@@ -95,6 +97,7 @@ class Product {
     required this.tags,
     required this.url,
     this.verified = false,
+    this.offer,
   });
 
   final String id;
@@ -115,11 +118,43 @@ class Product {
   final String url;
   final bool verified;
 
+  /// Real store listing this product was priced from, when one was matched.
+  final OfferMatch? offer;
+
   String name(String languageCode) => languageCode == 'lt' ? nameLt : nameEn;
 
   /// Store search in Lithuanian. Search pages are stable; individual product
   /// pages in the fixture catalogue go out of stock or disappear.
-  String get orderUrl => store.searchUrl(nameLt);
+  String get orderUrl => offer?.url ?? store.searchUrl(nameLt);
+
+  /// Copy of this product priced from a real store listing. Safety inputs
+  /// (weight, calories, shelf life, allergens, age range) are unchanged.
+  Product withOffer(OfferMatch match) {
+    final matchedStore = Store.values.firstWhere(
+      (candidate) => candidate.name == match.store,
+      orElse: () => store,
+    );
+    return Product(
+      id: id,
+      nameEn: nameEn,
+      nameLt: nameLt,
+      category: category,
+      store: matchedStore,
+      priceEur: match.priceEur,
+      weightKg: weightKg,
+      shelfLifeMonths: shelfLifeMonths,
+      allergens: allergens,
+      diets: diets,
+      caloriesPerUnit: caloriesPerUnit,
+      priority: priority,
+      ageMin: ageMin,
+      ageMax: ageMax,
+      tags: tags,
+      url: match.url,
+      verified: true,
+      offer: match,
+    );
+  }
 
   bool get isShared => tags.contains('shared');
   bool get userSupplied => tags.contains('userSupplied');

@@ -64,9 +64,20 @@ class StoreOffer {
 /// only ever sees a shortlist from here; prices are always read from this
 /// database, never invented by the model.
 class StoreCatalogue {
-  StoreCatalogue._(this.offers, this.meta);
+  StoreCatalogue._(this.offers, this.meta)
+    : _haystacks = List<String>.generate(
+        offers.length,
+        (index) => _normalize(
+          '${offers[index].name} ${offers[index].category} ${offers[index].role}',
+        ),
+        growable: false,
+      );
 
   final List<StoreOffer> offers;
+
+  /// Normalised search text per offer, computed once at load so a keystroke
+  /// does not re-normalise 33k strings.
+  final List<String> _haystacks;
   final Map<String, dynamic> meta;
 
   static StoreCatalogue? _instance;
@@ -101,17 +112,17 @@ class StoreCatalogue {
   }) {
     final normalized = _normalize(query);
     final tokens = normalized.split(RegExp(r'\s+')).where((t) => t.length > 1);
-    final filtered = offers.where(
-      (offer) => stores.isEmpty || stores.contains(offer.store),
-    );
     if (tokens.isEmpty) {
-      return filtered.take(limit).toList(growable: false);
+      return offers
+          .where((offer) => stores.isEmpty || stores.contains(offer.store))
+          .take(limit)
+          .toList(growable: false);
     }
     final scored = <(int, StoreOffer)>[];
-    for (final offer in filtered) {
-      final haystack = _normalize(
-        '${offer.name} ${offer.category} ${offer.role}',
-      );
+    for (var i = 0; i < offers.length; i++) {
+      final offer = offers[i];
+      if (stores.isNotEmpty && !stores.contains(offer.store)) continue;
+      final haystack = _haystacks[i];
       var score = 0;
       for (final token in tokens) {
         if (haystack.contains(token)) score++;
